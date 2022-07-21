@@ -65,6 +65,7 @@
 
 .container-fluid {
   overflow-y: scroll;
+  padding: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -81,48 +82,68 @@
   height: 100%;
 }
 
-.navbar-nav .logo {
+.navbar-nav.sidebar .logo {
   width: 100%;
 }
 
-.navbar-nav .sidebar-heading {
+.navbar-nav.sidebar .sidebar-heading {
   color: #fff;
   font-weight: normal;
   font-size: 1rem;
+  text-align: left;
+  padding: 0 0.5rem;
 }
 
-.navbar-nav .nav-item .nav-link {
-  padding: 0.5rem 0.25rem;
+.navbar-nav.sidebar .nav-item {
+  text-align: left;
 }
 
-.static-top .user-row {
+.navbar-nav.sidebar .nav-item .nav-link {
+  width: 100%;
+  padding: 0.5rem 0.5rem;
+  text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-nav.sidebar .logo {
+    width: 90%;
+  }
+  .navbar-nav.sidebar .nav-item .nav-link {
+    padding: 0.5rem 1rem;
+  }
+  .navbar-nav.sidebar.toggled {
+    width: 10rem !important;
+  }
+  .navbar-nav.sidebar.toggled .nav-item .nav-link {
+    width: 10rem;
+  }
+  .navbar-nav.sidebar.toggled .nav-item .nav-link span {
+    font-size: 0.75rem;
+  }
+}
+
+.topbar.static-top .user-row {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   position: absolute;
   top: 50%;
   right: 1rem;
+  max-width: calc(100% - 5rem);
   transform: translateY(-50%);
 }
 
-.static-top .user-row .btn {
+.topbar.static-top .user-row .btn {
   margin-left: 1rem;
   font-size: 1rem;
 }
 
-@media screen and (min-width: 768px) {
-  .navbar-nav .logo {
-    width: 90%;
-  }
-  .sidebar .nav-item .nav-link {
-    padding: 0.5rem 1rem;
-  }
-  .sidebar.toggled {
-    width: 10rem !important;
-  }
-  .sidebar.toggled .nav-item .nav-link {
-    width: 10rem;
-  }
+.topbar.static-top .user-row .btn .text {
+  white-space: nowrap;
+}
+
+.topbar.static-top #sidebarToggleTop {
+  z-index: 10;
 }
 
 .topbar .hello-txt {
@@ -136,6 +157,7 @@
 }
 
 .main .chart-wrap {
+  width: 100%;
   margin: 0 0.75rem;
 }
 
