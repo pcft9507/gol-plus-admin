@@ -1,0 +1,180 @@
+// 로그인
+.login-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  overflow: auto;
+
+  .login-logo {
+    width: 184px;
+    margin: 0 auto;
+  }
+
+  .login-txt {
+    margin-top: 30px;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .card {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .card-body-sub {
+    width: 100%;
+  }
+  
+  .chk-remember {
+    display: flex;
+
+    .custom-control {
+      margin-right: 15px;
+    }
+  }  
+
+  .form-group-pw {
+
+    .custom-checkbox {
+      margin-top: 1rem;
+    }    
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .login-wrap {
+
+    .form-group-pw {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+      .form-control-user {
+        width: calc(100% - 130px);
+      }
+  
+      .custom-checkbox {
+        margin-top: 0;
+      }    
+    }
+  }
+}
+
+#wrapper {
+  overflow: hidden;
+  height: 100%;
+}
+
+#wrapper #content-wrapper #content {
+  overflow: hidden;
+}
+
+.container-fluid {
+  overflow-y: scroll;
+}
+@media screen and (min-width: 768px) {
+  .container-fluid {
+    height: calc(100% - 70px);
+    overflow-y: auto;
+    padding: 20px;
+  }
+}
+
+// 헤더 사이드네비
+.navbar-nav {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100%;
+
+  .logo {
+    width: 100%;
+  }
+
+  .sidebar-heading {
+    color: #fff;
+    font-weight: normal;
+    font-size: 1rem;
+  }
+
+  .nav-item .nav-link {
+    padding: 0.5rem 0.25rem;
+  }
+}
+
+// top-bar
+.static-top {
+
+  .user-row {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+
+    .btn {
+      margin-left: 1rem;
+      font-size: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-nav {
+
+    .logo {
+      width: 90%;
+    }
+  }
+  .sidebar .nav-item .nav-link {
+    padding: 0.5rem 1rem;
+  }
+  
+  .sidebar.toggled {
+    width: 10rem !important;
+  }
+
+  .sidebar.toggled .nav-item .nav-link {
+    width: 10rem;
+  }
+}
+
+
+.topbar {
+
+  .hello-txt {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .topbar {
+
+    .hello-txt {
+      font-size: 1rem;
+    }
+  }
+}
+
+.main {
+
+  .chart-wrap {
+    margin: 0 0.75rem;
+  }
+
+  .card-body {
+
+    .count {
+      text-align: right;
+    }
+  }
+}
+
+.content {
+  overflow: hidden;
+  height: 100%;
+}

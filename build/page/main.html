@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="../assets/css/sb-admin-2.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/common.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="../assets/js/jquery-3.6.0.min.js"></script>
+  <script src="../assets/js/ui.js"></script>
+  <title>골고루 보상</title>
+</head>
+
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+  <!-- Sidebar - Brand -->
+  <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../page/main.html">
+    <div class="logo"><img src="../assets/img/logo.png"></div>
+    <!-- <div class="sidebar-brand-icon rotate-n-15">
+                <i class="fas fa-laugh-wink"></i>
+            </div>
+            <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div> -->
+  </a>
+
+  <!-- Divider -->
+  <hr class="sidebar-divider">
+
+  <!-- Heading -->
+  <div class="sidebar-heading big">
+    회원
+  </div>
+
+  <!-- Nav Item - Pages Collapse Menu -->
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+      <span>일반회원</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+      <span>변호사 파트너</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+      <span>손해사정사 파트너</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+      <span>탐정사 파트너</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+      <span>관리자</span>
+    </a>
+  </li>
+
+  <!-- Divider -->
+  <hr class="sidebar-divider">
+
+  <!-- Heading -->
+  <div class="sidebar-heading big">
+    상담
+  </div>
+
+  <!-- Nav Item - Pages Collapse Menu -->
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+      <span>변호사 상담</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+      <span>손해사정사 상담</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+      <span>탐정사 상담</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+      <span>코디 상담</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+      <span>코디 추천 상담</span>
+    </a>
+  </li>
+
+  <!-- Divider -->
+  <hr class="sidebar-divider d-none d-md-block">
+  <div class="sidebar-heading big">
+    공지
+  </div>
+
+  <!-- Nav Item - Pages Collapse Menu -->
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+      <span>변호사 공지</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+      <span>손해사정사 공지</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+      <span>탐정사 공지</span>
+    </a>
+  </li>      
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+      <span>고객 공지</span>
+    </a>
+  </li>      
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+      <span>코디 추천 상담</span>
+    </a>
+  </li>      
+  <!-- Divider -->
+  <hr class="sidebar-divider d-none d-md-block">
+  <div class="sidebar-heading big">
+    이벤트
+  </div>
+
+  <!-- Nav Item - Pages Collapse Menu -->
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+      <span>이벤트</span>
+    </a>
+  </li>
+
+  <!-- Divider -->
+  <hr class="sidebar-divider d-none d-md-block">
+  <div class="sidebar-heading big">
+    통계
+  </div>
+
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+      <span>변호사 상담 건수</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+      <span>손해사정사 상담 건수</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+      <span>탐정사 상담 건수</span>
+    </a>
+  </li>      
+
+  <!-- Divider -->
+  <hr class="sidebar-divider d-none d-md-block">
+  <div class="sidebar-heading big">
+    제휴문의
+  </div>
+
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+      <span>변호사 제휴문의</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+      <span>손해사정사 제휴문의</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+      <span>탐정사 제휴문의</span>
+    </a>
+  </li>      
+
+  <!-- Divider -->
+  <hr class="sidebar-divider d-none d-md-block">
+  <div class="sidebar-heading big">
+    카톡전송
+  </div>
+
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+      <span>카톡전송</span>
+    </a>
+  </li>
+</ul>
+<!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+<nav class="navbar navbar-expand navbar-light bg-white topbar static-top shadow">
+
+  <!-- Sidebar Toggle (Topbar) -->
+  <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+    <i class="fa fa-bars"></i>
+  </button>
+
+  <div class="user-row">
+    <div class="hello-txt">홍길동님 오늘도 활기찬 하루되세요</div>
+
+    <a href="#" class="btn btn-success">
+      <span class="text">로그아웃</span>
+    </a>
+  </div>
+
+</nav>
+<!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid main">
+
+          <!-- row -->
+          <div class="row">
+            <div class="col-xl-4 col-md-6 mb-4">
+              <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-lg font-weight-bold text-primary text-uppercase mb-1">오늘 변호사 상담 건수</div>
+                      <div class="count text-lg mb-0 font-weight-bold text-gray-800">45건</div>
+                    </div>
+                  </div>
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-lg font-weight-bold text-primary text-uppercase mb-1">전체 변호사 추천 상담 건수</div>
+                      <div class="count text-lg mb-0 font-weight-bold text-gray-800">2200건</div>
+                    </div>
+                  </div>
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-lg font-weight-bold text-primary text-uppercase mb-1">전체 변호사 상담 건수</div>
+                      <div class="count text-lg mb-0 font-weight-bold text-gray-800">467131건</div>
+                    </div>
+                  </div>
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-lg font-weight-bold text-primary text-uppercase mb-1">전체 변호사</div>
+                      <div class="count text-lg mb-0 font-weight-bold text-gray-800">45명</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-md-6 mb-4">
+              <div class="card border-left-success shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-lg font-weight-bold text-success text-uppercase mb-1">오늘 손해사정사 상담 건수</div>
+                      <div class="count text-lg mb-0 font-weight-bold text-gray-800">45건</div>
+                    </div>
+                  </div>
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-lg font-weight-bold text-success text-uppercase mb-1">전체 손해사정사 추천 상담 건수</div>
+                      <div class="count text-lg mb-0 font-weight-bold text-gray-800">2200건</div>
+                    </div>
+                  </div>
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-lg font-weight-bold text-success text-uppercase mb-1">전체 손해사정사 상담 건수</div>
+                      <div class="count text-lg mb-0 font-weight-bold text-gray-800">467131건</div>
+                    </div>
+                  </div>
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-lg font-weight-bold text-success text-uppercase mb-1">전체 손해사정사</div>
+                      <div class="count text-lg mb-0 font-weight-bold text-gray-800">1059명</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-md-6 mb-4">
+              <div class="card border-left-info shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-lg font-weight-bold text-info text-uppercase mb-1">오늘 탐정사 상담 건수</div>
+                      <div class="count text-lg mb-0 font-weight-bold text-gray-800">45건</div>
+                    </div>
+                  </div>
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-lg font-weight-bold text-info text-uppercase mb-1">전체 탐정사 추천 상담 건수</div>
+                      <div class="count text-lg mb-0 font-weight-bold text-gray-800">2200건</div>
+                    </div>
+                  </div>
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-lg font-weight-bold text-info text-uppercase mb-1">전체 탐정사 상담 건수</div>
+                      <div class="count text-lg mb-0 font-weight-bold text-gray-800">467131건</div>
+                    </div>
+                  </div>
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-lg font-weight-bold text-info text-uppercase mb-1">전체 탐정사</div>
+                      <div class="count text-lg mb-0 font-weight-bold text-gray-800">1059명</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- row -->
+
+          <!-- row -->
+          <div class="row">
+            <div class="card shadow chart-wrap">
+              <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">일자별 변호사 상담건수</h6>
+              </div>
+              <div class="card-body">
+                  <div class="chart-bar"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+                      <canvas id="myBarChart" width="774" height="320" style="display: block; width: 774px; height: 320px;" class="chartjs-render-monitor"></canvas>
+                  </div>
+                  <hr>
+                  Styling for the bar chart can be found in the
+                  <code>/js/demo/chart-bar-demo.js</code> file.
+              </div>
+           </div>            
+          </div>
+          <!-- row -->
+
+        </div>
+        <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="../assets/js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="../vendor/chart.js/Chart.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <!-- <script src="../assets/js/demo/chart-area-demo.js"></script>
+  <script src="../assets/js/demo/chart-pie-demo.js"></script> -->
+  <!-- 메인 바 차트 데모 -->
+  <script src="../assets/js/demo/main-chart-bar-demo.js"></script>
+</body>
+
+</html>
