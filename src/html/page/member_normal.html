@@ -1,0 +1,111 @@
+@@include('@@webRoot/include/head.html')
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    @@include('@@webRoot/include/header.html')
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        @@include('@@webRoot/include/topbar.html')
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <h1 class="h3 mb-2 text-gray-800">일반회원 리스트</h1>
+
+          <!-- DataTales Example -->
+          <div class="card shadow mb-4">
+            <div class="card-body">
+              <div class="btn-tbl-excel">
+                <a href="#" class="btn btn-success btn-icon-split btn-sm">
+                  <span class="icon text-white-50">
+                    <i class="fas fa-clipboard-list fa-2x0"></i>
+                  </span>
+                  <span class="text">엑셀출력</span>
+              </a>
+              </div>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="memberNormalTable" width="100%" cellspacing="0">
+                  <colgroup>
+                    <col class="col1">
+                    <col class="col2">
+                    <col class="col3">
+                    <col class="col4">
+                    <col class="col5">
+                    <col class="col6">
+                    <col class="col7">
+                    <col class="col8">
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>순번</th>
+                      <th>이름</th>
+                      <th>핸드폰</th>
+                      <th>이메일</th>
+                      <th>주소</th>
+                      <th>회원가입</th>
+                      <th>생성일시</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>1</td>
+                      <td>홍길동</td>
+                      <td>010-1234-5678</td>
+                      <td>hogil@naver.com</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>카카오</td>
+                      <td>2022-07-12 09:00</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="@@webRoot/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="@@webRoot/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="@@webRoot/assets/js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="@@webRoot/vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="@@webRoot/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      $('#memberNormalTable').DataTable();
+    });    
+  </script>
+</body>
+
+</html>

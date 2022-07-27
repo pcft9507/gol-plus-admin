@@ -12,7 +12,6 @@ html {
 }
 
 body {
-  overflow: hidden;
   height: 100%;
   font-size: 100%;
   letter-spacing: -0.02em;
@@ -45,6 +44,18 @@ img {
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  width: 7px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
 }
 
 input {
