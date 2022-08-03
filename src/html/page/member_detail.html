@@ -1,0 +1,106 @@
+@@include('@@webRoot/include/head.html')
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    @@include('@@webRoot/include/header.html')
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        @@include('@@webRoot/include/topbar.html')
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <h1 class="h3 mb-2 text-gray-800">일반회원 상세</h1>
+
+          <!-- DataTales Example -->
+          <div class="card shadow mb-4 mem-detail">
+            <div class="card-body">
+              <form class="user">
+                <div class="form-group row">
+                  <div class="col-sm-3 mb-3 mb-sm-0">
+                    <input type="text" class="form-control form-control-user" id="userId" placeholder="아이디">
+                  </div>
+                  <div class="col-sm-3 mb-3 mb-sm-0">
+                    <input type="text" class="form-control form-control-user" id="userName" placeholder="이름">
+                  </div>
+                  <div class="col-sm-3 mb-3 mb-sm-0">
+                    <input type="text" class="form-control form-control-user" id="phoneNumber" placeholder="전화번호">
+                  </div>
+                  <div class="col-sm-3">
+                    <input type="text" class="form-control form-control-user" id="userType" placeholder="회원타입">
+                  </div>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control form-control-user" id="addr" placeholder="주소">
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-3 mb-3 mb-sm-0">
+                    <input type="text" class="form-control form-control-user" id="exampleFirstName" placeholder="가입종류">
+                  </div>
+                </div>
+              </form>              
+              <hr>
+              <div class="btn-tbl-excel d-flex-e-s">
+                <a href="#" class="btn btn-primary">
+                  <span class="text">수정</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /.container-fluid -->
+        </div>
+      </div>
+      <!-- End of Main Content -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="@@webRoot/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="@@webRoot/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="@@webRoot/assets/js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <link rel="stylesheet" href="@@webRoot/vendor/datatables/dataTables.bootstrap4.min.css">
+  <script src="@@webRoot/vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="@@webRoot/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      $('#dataTable').DataTable();
+    });    
+
+    // 상세로 이동
+    function goDetail (pageIndex) {
+      console.log(pageIndex + '상세로 이동');
+    }
+
+    // 선택삭제
+    function deleteRow () {
+      console.log('선택삭제');
+    }
+  </script>
+</body>
+
+</html>
