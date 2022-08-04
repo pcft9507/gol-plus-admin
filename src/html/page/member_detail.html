@@ -27,33 +27,38 @@
               <form class="user">
                 <div class="form-group row">
                   <div class="col-sm-3 mb-3 mb-sm-0">
-                    <input type="text" class="form-control form-control-user" id="userId" placeholder="아이디">
+                    <input class="effect-1" type="text" id="userId" placeholder="아이디">
+                    <span class="focus-border"></span>
                   </div>
                   <div class="col-sm-3 mb-3 mb-sm-0">
-                    <input type="text" class="form-control form-control-user" id="userName" placeholder="이름">
+                    <input type="text" class="effect-1" id="userName" placeholder="이름">
+                    <span class="focus-border"></span>
                   </div>
                   <div class="col-sm-3 mb-3 mb-sm-0">
-                    <input type="text" class="form-control form-control-user" id="phoneNumber" placeholder="전화번호">
+                    <input type="text" class="effect-1" id="phoneNumber" placeholder="전화번호">
+                    <span class="focus-border"></span>
                   </div>
                   <div class="col-sm-3">
-                    <input type="text" class="form-control form-control-user" id="subscriptionType" placeholder="가입종류">
+                    <input type="text" class="effect-1" id="userType" placeholder="회원타입">
+                    <span class="focus-border"></span>
                   </div>
                 </div>
-                <div class="form-group">
-                    <input type="email" class="form-control form-control-user" id="addr" placeholder="주소">
+                <div class="form-group row">
+                  <div class="col-sm-12">
+                    <input type="email" class="effect-1" id="addr" placeholder="주소">
+                    <span class="focus-border"></span>
+                  </div>
                 </div>
                 <div class="form-group row">
                   <div class="col-sm-3 mb-3 mb-sm-0">
-                    <input type="text" class="form-control form-control-user" id="exampleFirstName" placeholder="가입종류">
-                  </div>
-                  <div class="col-sm-3">
-                    <input type="text" class="form-control form-control-user" id="userType" placeholder="회원타입">
+                    <input type="text" class="effect-1" id="exampleFirstName" placeholder="가입종류">
+                    <span class="focus-border"></span>
                   </div>
                 </div>
               </form>              
               <hr>
               <div class="btn-tbl-excel d-flex-e-s">
-                <a href="#" class="btn btn-primary">
+                <a href="#" class="btn btn-primary pl-5 pr-5">
                   <span class="text">수정</span>
                 </a>
               </div>
@@ -90,9 +95,8 @@
   <script src="@@webRoot/vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
   <script>
-    $(document).ready(function() {
-      $('#dataTable').DataTable();
-    });    
+    // 네비활성화
+    $('.navbar-nav .member').eq(0).addClass('active');
 
     // 상세로 이동
     function goDetail (pageIndex) {
