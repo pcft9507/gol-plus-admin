@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="../assets/css/sb-admin-2.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/common.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="../assets/js/jquery-3.6.0.min.js"></script>
+  <script src="../assets/js/ui.js"></script>
+  <title>골고루 보상</title>
+</head>
+
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion toggled" id="accordionSidebar">
+
+  <!-- Sidebar - Brand -->
+  <a class="sidebar-brand logo" href="../page/main.html">
+    <img src="../assets/img/logo.png">
+  </a>
+
+  <!-- Divider -->
+  <hr class="sidebar-divider">
+
+  <!-- Heading -->
+  <div class="sidebar-heading big">
+    회원
+  </div>
+
+  <!-- Nav Item - Pages Collapse Menu -->
+  <li class="nav-item member">
+    <a class="nav-link collapsed" href="#">
+      <span>일반회원</span>
+    </a>
+  </li>
+  <li class="nav-item member">
+    <a class="nav-link collapsed" href="#">
+      <span>변호사 파트너</span>
+    </a>
+  </li>
+  <li class="nav-item member">
+    <a class="nav-link collapsed" href="#">
+      <span>손해사정사 파트너</span>
+    </a>
+  </li>
+  <li class="nav-item member">
+    <a class="nav-link collapsed" href="#">
+      <span>탐정사 파트너</span>
+    </a>
+  </li>
+  <li class="nav-item member">
+    <a class="nav-link collapsed" href="#">
+      <span>관리자</span>
+    </a>
+  </li>
+
+  <!-- Divider -->
+  <hr class="sidebar-divider">
+
+  <!-- Heading -->
+  <div class="sidebar-heading big">
+    상담
+  </div>
+
+  <!-- Nav Item - Pages Collapse Menu -->
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+      <span>변호사 상담</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+      <span>손해사정사 상담</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+      <span>탐정사 상담</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+      <span>코디 상담</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+      <span>코디 추천 상담</span>
+    </a>
+  </li>
+
+  <!-- Divider -->
+  <hr class="sidebar-divider d-none d-md-block">
+  <div class="sidebar-heading big">
+    공지
+  </div>
+
+  <!-- Nav Item - Pages Collapse Menu -->
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+      <span>변호사 공지</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+      <span>손해사정사 공지</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+      <span>탐정사 공지</span>
+    </a>
+  </li>      
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+      <span>고객 공지</span>
+    </a>
+  </li>      
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+      <span>코디 추천 상담</span>
+    </a>
+  </li>      
+  <!-- Divider -->
+  <hr class="sidebar-divider d-none d-md-block">
+  <div class="sidebar-heading big">
+    이벤트
+  </div>
+
+  <!-- Nav Item - Pages Collapse Menu -->
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+      <span>이벤트</span>
+    </a>
+  </li>
+
+  <!-- Divider -->
+  <hr class="sidebar-divider d-none d-md-block">
+  <div class="sidebar-heading big">
+    통계
+  </div>
+
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+      <span>변호사 상담 건수</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+      <span>손해사정사 상담 건수</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+      <span>탐정사 상담 건수</span>
+    </a>
+  </li>      
+
+  <!-- Divider -->
+  <hr class="sidebar-divider d-none d-md-block">
+  <div class="sidebar-heading big">
+    제휴문의
+  </div>
+
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+      <span>변호사 제휴문의</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+      <span>손해사정사 제휴문의</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+      <span>탐정사 제휴문의</span>
+    </a>
+  </li>      
+
+  <!-- Divider -->
+  <hr class="sidebar-divider d-none d-md-block">
+  <div class="sidebar-heading big">
+    카톡전송
+  </div>
+
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+      <span>카톡전송</span>
+    </a>
+  </li>
+</ul>
+<!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+<nav class="navbar navbar-expand navbar-light bg-white topbar static-top shadow">
+
+  <!-- Sidebar Toggle (Topbar) -->
+  <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+    <i class="fa fa-bars"></i>
+  </button>
+
+  <div class="user-row">
+    <div class="hello-txt">홍길동님 오늘도 활기찬 하루되세요</div>
+
+    <a href="#" class="btn btn-success btn-sm">
+      <span class="text">로그아웃</span>
+    </a>
+  </div>
+
+</nav>
+<!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <h1 class="h3 mb-2 text-gray-800">관리자 리스트</h1>
+
+          <!-- DataTales Example -->
+          <div class="card shadow mb-4">
+            <div class="card-body">
+              <div class="btn-tbl-excel">
+                <a href="#" class="btn btn-success btn-icon-split btn-sm">
+                  <span class="icon text-white-50">
+                    <i class="fas fa-clipboard-list fa-2x0"></i>
+                  </span>
+                  <span class="text">엑셀출력</span>
+                </a>
+              </div>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>순번</th>
+                      <th>이름</th>
+                      <th>핸드폰</th>
+                      <th>이메일</th>
+                      <th>주소</th>
+                      <th>생성일시</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr ondblclick="goDetail(1);">
+                      <td class="tac"><input type="checkbox"></td>
+                      <td>1</td>
+                      <td>홍길동</td>
+                      <td>010-1234-5678</td>
+                      <td>ksh@email.com</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td class="tac"><input type="checkbox"></td>
+                      <td>2</td>
+                      <td>홍길동</td>
+                      <td>010-1234-5678</td>
+                      <td>ksh@email.com</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td class="tac"><input type="checkbox"></td>
+                      <td>3</td>
+                      <td>홍길동</td>
+                      <td>010-1234-5678</td>
+                      <td>ksh@email.com</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td class="tac"><input type="checkbox"></td>
+                      <td>4</td>
+                      <td>홍길동</td>
+                      <td>010-1234-5678</td>
+                      <td>ksh@email.com</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td class="tac"><input type="checkbox"></td>
+                      <td>5</td>
+                      <td>홍길동</td>
+                      <td>010-1234-5678</td>
+                      <td>ksh@email.com</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td class="tac"><input type="checkbox"></td>
+                      <td>6</td>
+                      <td>홍길동</td>
+                      <td>010-1234-5678</td>
+                      <td>ksh@email.com</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td class="tac"><input type="checkbox"></td>
+                      <td>7</td>
+                      <td>홍길동</td>
+                      <td>010-1234-5678</td>
+                      <td>ksh@email.com</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td class="tac"><input type="checkbox"></td>
+                      <td>8</td>
+                      <td>홍길동</td>
+                      <td>010-1234-5678</td>
+                      <td>ksh@email.com</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td class="tac"><input type="checkbox"></td>
+                      <td>9</td>
+                      <td>홍길동</td>
+                      <td>010-1234-5678</td>
+                      <td>ksh@email.com</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td class="tac"><input type="checkbox"></td>
+                      <td></td>
+                      <td>홍길동</td>
+                      <td>010-1234-5678</td>
+                      <td>ksh@email.com</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td class="tac"><input type="checkbox"></td>
+                      <td></td>
+                      <td>홍길동</td>
+                      <td>010-1234-5678</td>
+                      <td>ksh@email.com</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td class="tac"><input type="checkbox"></td>
+                      <td></td>
+                      <td>홍길동</td>
+                      <td>010-1234-5678</td>
+                      <td>ksh@email.com</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td class="tac"><input type="checkbox"></td>
+                      <td></td>
+                      <td>홍길동</td>
+                      <td>010-1234-5678</td>
+                      <td>ksh@email.com</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td class="tac"><input type="checkbox"></td>
+                      <td></td>
+                      <td>홍길동</td>
+                      <td>010-1234-5678</td>
+                      <td>ksh@email.com</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td class="tac"><input type="checkbox"></td>
+                      <td></td>
+                      <td>홍길동</td>
+                      <td>010-1234-5678</td>
+                      <td>ksh@email.com</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td class="tac"><input type="checkbox"></td>
+                      <td></td>
+                      <td>홍길동</td>
+                      <td>010-1234-5678</td>
+                      <td>ksh@email.com</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td class="tac"><input type="checkbox"></td>
+                      <td></td>
+                      <td>홍길동</td>
+                      <td>010-1234-5678</td>
+                      <td>ksh@email.com</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td class="tac"><input type="checkbox"></td>
+                      <td></td>
+                      <td>홍길동</td>
+                      <td>010-1234-5678</td>
+                      <td>ksh@email.com</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td class="tac"><input type="checkbox"></td>
+                      <td></td>
+                      <td>홍길동</td>
+                      <td>010-1234-5678</td>
+                      <td>ksh@email.com</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td class="tac"><input type="checkbox"></td>
+                      <td></td>
+                      <td>홍길동</td>
+                      <td>010-1234-5678</td>
+                      <td>ksh@email.com</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td class="tac"><input type="checkbox"></td>
+                      <td></td>
+                      <td>홍길동</td>
+                      <td>010-1234-5678</td>
+                      <td>ksh@email.com</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td class="tac"><input type="checkbox"></td>
+                      <td></td>
+                      <td>홍길동</td>
+                      <td>010-1234-5678</td>
+                      <td>ksh@email.com</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td class="tac"><input type="checkbox"></td>
+                      <td></td>
+                      <td>홍길동</td>
+                      <td>010-1234-5678</td>
+                      <td>ksh@email.com</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td class="tac"><input type="checkbox"></td>
+                      <td></td>
+                      <td>홍길동</td>
+                      <td>010-1234-5678</td>
+                      <td>ksh@email.com</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td class="tac"><input type="checkbox"></td>
+                      <td></td>
+                      <td>홍길동</td>
+                      <td>010-1234-5678</td>
+                      <td>ksh@email.com</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td class="tac"><input type="checkbox"></td>
+                      <td></td>
+                      <td>홍길동</td>
+                      <td>010-1234-5678</td>
+                      <td>ksh@email.com</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td class="tac"><input type="checkbox"></td>
+                      <td></td>
+                      <td>홍길동</td>
+                      <td>010-1234-5678</td>
+                      <td>ksh@email.com</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td class="tac"><input type="checkbox"></td>
+                      <td></td>
+                      <td>홍길동</td>
+                      <td>010-1234-5678</td>
+                      <td>ksh@email.com</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="d-flex-e-s mt-3">
+                  <a href="javascript: deleteRow();" class="btn btn-danger btn-icon-split btn-sm">
+                    <span class="icon text-white-50">
+                        <i class="fas fa-trash"></i>
+                    </span>
+                    <span class="text">선택삭제</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+          <!-- /.container-fluid -->
+        </div>
+      </div>
+      <!-- End of Main Content -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="../assets/js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <link rel="stylesheet" href="../vendor/datatables/dataTables.bootstrap4.min.css">
+  <script src="../vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="../vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      $('#dataTable').DataTable();
+    });    
+    
+    // 네비활성화
+    $('.navbar-nav .member').eq(4).addClass('active');
+
+    // 상세로 이동
+    function goDetail (pageIndex) {
+      console.log(pageIndex + '상세로 이동');
+    }
+
+    // 선택삭제
+    function deleteRow () {
+      console.log('선택삭제');
+    }
+
+  </script>
+</body>
+
+</html>
