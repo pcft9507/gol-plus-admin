@@ -211,8 +211,17 @@
   margin-bottom: 10px;
 }
 
-#dataTable tr {
+#dataTable thead th {
+  padding: 0.5rem;
+  font-size: 0.85rem;
+}
+
+#dataTable tbody tr {
   cursor: pointer;
+}
+
+#dataTable tbody tr td {
+  font-size: 0.75rem;
 }
 
 .table.dataTable {
@@ -239,4 +248,107 @@
 
 .effect-1:focus ~ .focus-border {
   width: calc(100% - 1.5rem);
+}
+
+.custom-control-label {
+  cursor: pointer;
+}
+
+.card .date-row {
+  flex-wrap: wrap;
+}
+
+.card .date-row .btn {
+  height: 40px;
+  margin-right: 20px;
+  padding: 25px;
+  white-space: nowrap;
+}
+
+.card .date-row .btn.active {
+  color: #fff;
+  background: orange;
+}
+
+.card .date-row .btn:focus {
+  box-shadow: none;
+}
+
+.card .time-row {
+  flex-wrap: wrap;
+}
+
+.card .time-row .btn {
+  height: 40px;
+  margin-right: 20px;
+  white-space: nowrap;
+}
+
+.card .time-row .btn.active {
+  color: orange;
+  border: 2px solid orange;
+}
+
+.card .time-row .btn:focus {
+  box-shadow: none;
+}
+
+.card .upload-img {
+  width: 50px;
+  color: #000;
+}
+
+.reply .replay-item {
+  margin-bottom: 20px;
+}
+
+.reply .reply-head {
+  display: flex;
+}
+
+.reply .reply-head .reply-author {
+  margin-right: 10px;
+  color: #000;
+}
+
+.reply .reply-head .reply-date {
+  color: #000;
+}
+
+.reply .reply-cont .reply-text {
+  margin-top: 10px;
+  color: #000;
+}
+
+.reply .reply-btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.reply .reply-btn a {
+  margin-left: 10px;
+}
+
+.reply .reply-admin {
+  margin-top: 10px;
+}
+
+.reply .reply-admin .replay-ad-cont {
+  display: flex;
+}
+
+.reply .reply-admin .replay-ad-label {
+  width: 60px;
+  color: #000;
+}
+
+.reply .reply-admin .replay-ad-text {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  color: #000;
+  resize: none;
+  border: 1px solid #aaa;
+  border-radius: 5px;
 }
