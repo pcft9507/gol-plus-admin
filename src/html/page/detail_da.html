@@ -1,0 +1,588 @@
+@@include('@@webRoot/include/head.html')
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    @@include('@@webRoot/include/header.html')
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        @@include('@@webRoot/include/topbar.html')
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <h1 class="h3 mb-2 text-gray-800">손해사정사 개인정보</h1>
+
+          <!-- DataTales Example -->
+          <div class="card shadow mb-4">
+            <div class="card-body">
+              <form class="user">
+                <div class="form-group row">
+                  <div class="col-sm-3 mb-3 mb-sm-0">
+                    <input class="effect-1" type="text" id="userId" placeholder="아이디">
+                    <span class="focus-border"></span>
+                  </div>
+                  <div class="col-sm-3 mb-3 mb-sm-0">
+                    <input type="text" class="effect-1" id="userName" placeholder="이름">
+                    <span class="focus-border"></span>
+                  </div>
+                  <div class="col-sm-3 mb-3 mb-sm-0">
+                    <input type="text" class="effect-1" id="phoneNumber" placeholder="전화번호">
+                    <span class="focus-border"></span>
+                  </div>
+                  <div class="col-sm-3">
+                    <input type="text" class="effect-1" id="birthday" placeholder="생년월일">
+                    <span class="focus-border"></span>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-12">
+                    <input type="email" class="effect-1" id="addr" placeholder="주소">
+                    <span class="focus-border"></span>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-3 mb-3 mb-sm-0">
+                    <input type="text" class="effect-1" id="exampleFirstName" placeholder="가입종류">
+                    <span class="focus-border"></span>
+                  </div>
+                  <div class="col-sm-3">
+                    <input type="email" class="effect-1" id="userType" placeholder="회원타입">
+                    <span class="focus-border"></span>
+                  </div>
+                </div>
+              </form>              
+              <hr>
+              <div class="btn-tbl-excel d-flex-e-s">
+                <a href="#" class="btn btn-primary pl-5 pr-5">
+                  <span class="text">개인정보 수정</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <h1 class="h3 mb-2 text-gray-800">손해사정사 업무정보</h1>
+
+          <!-- DataTales Example -->
+          <div class="card shadow mb-4">
+            <div class="card-body">
+              <form class="user">
+                <div class="form-group row">
+                  <div class="col-sm-3 mb-3 mb-sm-0">
+                    <input type="text" class="effect-1" id="verify" placeholder="인증여부">
+                    <span class="focus-border"></span>
+                  </div>
+                  <div class="col-sm-3 mb-3 mb-sm-0">
+                    <input type="text" class="effect-1" id="rgstNum" placeholder="손해사정사 등록번호">
+                    <span class="focus-border"></span>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                        <label class="small mb-1" for="interestAreaCd"><h6>서비스 지역</h6></label>
+                        <div class="custom-control custom-checkbox">
+                          <span class="mr-5">
+                            <input type="checkbox" id="A01001" class="custom-control-input" name="interestAreaCd" value="A01001">
+                            <label class="custom-control-label" for="A01001">서울</label>
+                          </span>
+                          <span class="mr-5">
+                            <input type="checkbox" id="A01002" class="custom-control-input" name="interestAreaCd" value="A01002">
+                            <label class="custom-control-label" for="A01002">경기</label>
+                          </span>
+                          <span class="mr-5">
+                            <input type="checkbox" id="A01003" class="custom-control-input" name="interestAreaCd" value="A01003">
+                            <label class="custom-control-label" for="A01003">부산</label>
+                          </span>
+                          <span class="mr-5">
+                            <input type="checkbox" id="A01004" class="custom-control-input" name="interestAreaCd" value="A01004">
+                            <label class="custom-control-label" for="A01004">대구</label>
+                          </span>
+                          <span class="mr-5">
+                            <input type="checkbox" id="A01005" class="custom-control-input" name="interestAreaCd" value="A01005">
+                            <label class="custom-control-label" for="A01005">인천</label>
+                          </span>
+                          <span class="mr-5">
+                            <input type="checkbox" id="A01006" class="custom-control-input" name="interestAreaCd" value="A01006">
+                            <label class="custom-control-label" for="A01006">광주</label>
+                          </span>
+                          <span class="mr-5">
+                            <input type="checkbox" id="A01007" class="custom-control-input" name="interestAreaCd" value="A01007">
+                            <label class="custom-control-label" for="A01007">대전</label>
+                          </span>
+                          <span class="mr-5">
+                            <input type="checkbox" id="A01008" class="custom-control-input" name="interestAreaCd" value="A01008">
+                            <label class="custom-control-label" for="A01008">울산</label>
+                          </span>
+                          <span class="mr-5">
+                            <input type="checkbox" id="A01009" class="custom-control-input" name="interestAreaCd" value="A01009">
+                            <label class="custom-control-label" for="A01009">세종</label>
+                          </span>
+                          <span class="mr-5">
+                            <input type="checkbox" id="A01010" class="custom-control-input" name="interestAreaCd" value="A01010">
+                            <label class="custom-control-label" for="A01010">강원</label>
+                          </span>
+                          <span class="mr-5">
+                            <input type="checkbox" id="A01011" class="custom-control-input" name="interestAreaCd" value="A01011">
+                            <label class="custom-control-label" for="A01011">전북</label>
+                          </span>
+                          <span class="mr-5">
+                            <input type="checkbox" id="A01012" class="custom-control-input" name="interestAreaCd" value="A01012">
+                            <label class="custom-control-label" for="A01012">전남</label>
+                          </span>
+                          <span class="mr-5">
+                            <input type="checkbox" id="A01013" class="custom-control-input" name="interestAreaCd" value="A01013">
+                            <label class="custom-control-label" for="A01013">충북</label>
+                          </span>
+                          <span class="mr-5">
+                            <input type="checkbox" id="A01014" class="custom-control-input" name="interestAreaCd" value="A01014">
+                            <label class="custom-control-label" for="A01014">충남</label>
+                          </span>
+                          <span class="mr-5">
+                            <input type="checkbox" id="A01015" class="custom-control-input" name="interestAreaCd" value="A01015">
+                            <label class="custom-control-label" for="A01015">경북</label>
+                          </span>
+                          <span class="mr-5">
+                            <input type="checkbox" id="A01016" class="custom-control-input" name="interestAreaCd" value="A01016">
+                            <label class="custom-control-label" for="A01016">경남</label>
+                          </span>
+                          <span class="mr-5">
+                            <input type="checkbox" id="A01017" class="custom-control-input" name="interestAreaCd" value="A01017">
+                            <label class="custom-control-label" for="A01017">제주</label>
+                          </span>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                        <label class="small mb-1" for="exam1"><h6>경력</h6></label>
+                        <div class="custom-control custom-checkbox">
+                          <span class="mr-5">
+                            <input type="checkbox" id="A02001" class="custom-control-input" name="taskFieldCd" value="A02001">
+                            <label class="custom-control-label" for="A02001">실손</label>
+                          </span>
+                          <span class="mr-5">
+                            <input type="checkbox" id="A02002" class="custom-control-input" name="taskFieldCd" value="A02002">
+                            <label class="custom-control-label" for="A02002">질병</label>
+                          </span>
+                          <span class="mr-5">
+                            <input type="checkbox" id="A02003" class="custom-control-input" name="taskFieldCd" value="A02003">
+                            <label class="custom-control-label" for="A02003">상해</label>
+                          </span>
+                          <span class="mr-5">
+                            <input type="checkbox" id="A02004" class="custom-control-input" name="taskFieldCd" value="A02004">
+                            <label class="custom-control-label" for="A02004">어린이</label>
+                          </span>
+                          <span class="mr-5">
+                            <input type="checkbox" id="A02005" class="custom-control-input" name="taskFieldCd" value="A02005">
+                            <label class="custom-control-label" for="A02005">태아</label>
+                          </span>
+                          <span class="mr-5">
+                            <input type="checkbox" id="A02006" class="custom-control-input" name="taskFieldCd" value="A02006">
+                            <label class="custom-control-label" for="A02006">차량파손(대물)</label>
+                          </span>
+                          <span class="mr-5">
+                            <input type="checkbox" id="A02007" class="custom-control-input" name="taskFieldCd" value="A02007">
+                            <label class="custom-control-label" for="A02007">교통사고(대인)</label>
+                          </span>
+                          <span class="mr-5">
+                            <input type="checkbox" id="A02008" class="custom-control-input" name="taskFieldCd" value="A02008">
+                            <label class="custom-control-label" for="A02008">배상책임</label>
+                          </span>
+                          <span class="mr-5">
+                            <input type="checkbox" id="A02009" class="custom-control-input" name="taskFieldCd" value="A02009">
+                            <label class="custom-control-label" for="A02009">근로재해</label>
+                          </span>
+                          <span class="mr-5">
+                            <input type="checkbox" id="A02010" class="custom-control-input" name="taskFieldCd" value="A02010">
+                            <label class="custom-control-label" for="A02010">학교안전사고</label>
+                          </span>
+                          <span class="mr-5">
+                            <input type="checkbox" id="A02011" class="custom-control-input" name="taskFieldCd" value="A02011">
+                            <label class="custom-control-label" for="A02011">여행자</label>
+                          </span>
+                          <span class="mr-5">
+                            <input type="checkbox" id="A02012" class="custom-control-input" name="taskFieldCd" value="A02012">
+                            <label class="custom-control-label" for="A02012">골프</label>
+                          </span>
+                          <span class="mr-5">
+                            <input type="checkbox" id="A02013" class="custom-control-input" name="taskFieldCd" value="A02013">
+                            <label class="custom-control-label" for="A02013">치아</label>
+                          </span>
+                          <span class="mr-5">
+                            <input type="checkbox" id="A02014" class="custom-control-input" name="taskFieldCd" value="A02014">
+                            <label class="custom-control-label" for="A02014">연금</label>
+                          </span>
+                          <span class="mr-5">
+                            <input type="checkbox" id="A02015" class="custom-control-input" name="taskFieldCd" value="A02015">
+                            <label class="custom-control-label" for="A02015">도난</label>
+                          </span>
+                          <span class="mr-5">
+                            <input type="checkbox" id="A02016" class="custom-control-input" name="taskFieldCd" value="A02016">
+                            <label class="custom-control-label" for="A02016">화재</label>
+                          </span>
+                          <span class="mr-5">
+                            <input type="checkbox" id="A02017" class="custom-control-input" name="taskFieldCd" value="A02017">
+                            <label class="custom-control-label" for="A02017">재난</label>
+                          </span>
+                          <span class="mr-5">
+                            <input type="checkbox" id="A02018" class="custom-control-input" name="taskFieldCd" value="A02018">
+                            <label class="custom-control-label" for="A02018">생명</label>
+                          </span>
+                          <span class="mr-5">
+                            <input type="checkbox" id="A02019" class="custom-control-input" name="taskFieldCd" value="A02019">
+                            <label class="custom-control-label" for="A02019">침수</label>
+                          </span>
+                          <span class="mr-5">
+                            <input type="checkbox" id="A02999" class="custom-control-input" name="taskFieldCd" value="A02999">
+                            <label class="custom-control-label" for="A02999">기타</label>
+                          </span>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-3 mb-3 mb-sm-0">
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="katalkYn">
+                      <label class="custom-control-label" for="katalkYn">카톡전송여부</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 mb-3 mb-sm-0">
+                    <input type="text" class="effect-1" id="verify" placeholder="상담전화번호(카톡전송번호)">
+                    <span class="focus-border"></span>
+                  </div>
+                  <div class="col-sm-3 mb-3 mb-sm-0">
+                    <input type="text" class="effect-1" id="rgstNum" placeholder="FAX">
+                    <span class="focus-border"></span>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-3 mb-3 mb-sm-0">
+                    <input class="effect-1" type="text" id="apeal1" placeholder="어필키워드1">
+                    <span class="focus-border"></span>
+                  </div>
+                  <div class="col-sm-3 mb-3 mb-sm-0">
+                    <input type="text" class="effect-1" id="apeal2" placeholder="어필키워드2">
+                    <span class="focus-border"></span>
+                  </div>
+                  <div class="col-sm-3 mb-3 mb-sm-0">
+                    <input type="text" class="effect-1" id="apeal3" placeholder="어필키워드3">
+                    <span class="focus-border"></span>
+                  </div>
+                  <div class="col-sm-3 mb-3 mb-sm-0">
+                    <p>(어필키워드 7자 이하)</p>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-12">
+                    <input class="effect-1" type="text" id="" placeholder="블로그 URL">
+                    <span class="focus-border"></span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="small mb-1" for="field"><h6>분야</h6></label>
+                  <textarea class="form-control col-sm-12 noresize" id="field" rows="5" spellcheck="false" data-ms-editor="true"></textarea>
+                </div>
+                <div class="form-group">
+                  <label class="small mb-1" for="introduce"><h6>짧은 소개 글</h6></label>
+                  <textarea class="form-control col-sm-12 noresize" id="introduce" rows="5" spellcheck="false" data-ms-editor="true"></textarea>
+                </div>
+              </form>         
+              <hr>
+              <div class="btn-tbl-excel d-flex-e-s">
+                <a href="#" class="btn btn-primary pl-5 pr-5">
+                  <span class="text">업무 정보 수정</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <h1 class="h3 mb-2 text-gray-800">상담 가능 날짜 및 시간 (제외 날짜 및 제외 시간)</h1>
+
+          <div class="card shadow mb-4">
+            <div class="card-body">
+              <form class="user">
+                <div class="form-group">
+                  <label class="small mb-1" for="field"><h6>15분 전화상담</h6></label>
+                </div>
+                <div class="date-row d-flex">
+                  <a href="#" class="btn btn-circle">07-15</a>
+                  <a href="#" class="btn btn-circle">07-16</a>
+                  <a href="#" class="btn btn-circle">07-17</a>
+                  <a href="#" class="btn btn-circle">07-18</a>
+                  <a href="#" class="btn btn-circle">07-19</a>
+                  <a href="#" class="btn btn-circle">07-20</a>
+                  <a href="#" class="btn btn-circle">07-21</a>
+                  <a href="#" class="btn btn-circle">07-22</a>
+                  <a href="#" class="btn btn-circle">07-23</a>
+                  <a href="#" class="btn btn-circle">07-24</a>
+                  <a href="#" class="btn btn-circle">07-25</a>
+                  <a href="#" class="btn btn-circle">07-26</a>
+                  <a href="#" class="btn btn-circle">07-27</a>
+                  <a href="#" class="btn btn-circle">07-28</a>
+                  <a href="#" class="btn btn-circle">07-29</a>
+                  <a href="#" class="btn btn-circle">07-30</a>
+                  <a href="#" class="btn btn-circle">07-31</a>
+                </div>
+                <div class="form-group">
+                  <label class="small mb-1" for="field"><h6>30분 방문상담</h6></label>
+                </div>
+                <div class="time-row d-flex">
+                  <a href="#" class="btn btn-square">09:00</a>
+                  <a href="#" class="btn btn-square">09:30</a>
+                  <a href="#" class="btn btn-square">10:00</a>
+                  <a href="#" class="btn btn-square">10:30</a>
+                  <a href="#" class="btn btn-square">11:00</a>
+                  <a href="#" class="btn btn-square">11:30</a>
+                  <a href="#" class="btn btn-square">12:00</a>
+                  <a href="#" class="btn btn-square">12:30</a>
+                  <a href="#" class="btn btn-square">13:00</a>
+                  <a href="#" class="btn btn-square">13:30</a>
+                  <a href="#" class="btn btn-square">14:00</a>
+                  <a href="#" class="btn btn-square">14:30</a>
+                  <a href="#" class="btn btn-square">15:00</a>
+                  <a href="#" class="btn btn-square">15:30</a>
+                  <a href="#" class="btn btn-square">16:00</a>
+                  <a href="#" class="btn btn-square">16:30</a>
+                  <a href="#" class="btn btn-square">17:00</a>
+                  <a href="#" class="btn btn-square">17:30</a>
+                  <a href="#" class="btn btn-square">18:00</a>
+                  <a href="#" class="btn btn-square">18:30</a>
+                  <a href="#" class="btn btn-square">19:00</a>
+                  <a href="#" class="btn btn-square">19:30</a>
+                  <a href="#" class="btn btn-square">20:00</a>
+                  <a href="#" class="btn btn-square">20:30</a>
+                  <a href="#" class="btn btn-square">21:00</a>
+                  <a href="#" class="btn btn-square">21:30</a>
+                  <a href="#" class="btn btn-square">22:00</a>
+                  <a href="#" class="btn btn-square">22:30</a>
+                  <a href="#" class="btn btn-square">23:00</a>
+                  <a href="#" class="btn btn-square">23:30</a>
+                </div>
+              </form>
+              <div class="btn-tbl-excel d-flex-e-s">
+                <a href="#" class="btn btn-primary pl-5 pr-5">
+                  <span class="text">상담 제외 날짜 및 제외 시간 등록</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <h1 class="h3 mb-2 text-gray-800">리뉴얼 PC 사진업로드(10M 이하 가능)</h1>
+
+          <div class="card shadow mb-4">
+            <div class="card-body">
+              <form method="POST" enctype="multipart/form-data" id="file-upload-form">
+                <div class="form-row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label class="small mb-1" for="renew-pc-file-upload-input">
+                        <h6>사진업로드</h6>
+                      </label>
+                      <input id="renew-pc-file-upload-input" name="file" filestyle="" type="file"
+                        data-class-button="btn btn-default" data-class-input="form-control" data-button-text=""
+                        data-icon-name="fa fa-upload" class="form-control" tabindex="-1"
+                        style="position: absolute; clip: rect(0px 0px 0px 0px);">
+                      <div class="bootstrap-filestyle input-group">
+                        <input type="text" id="userfile" class="form-control py-2" name="userfile" disabled="">
+                        <span class="group-span-filestyle input-group-btn" tabindex="0">
+                          <label for="renew-pc-file-upload-input" class="btn btn-default upload-img">
+                            <svg class="svg-inline--fa fa-upload fa-w-16 glyphicon" aria-hidden="true" focusable="false"
+                              data-prefix="fa" data-icon="upload" role="img" xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 512 512" data-fa-i2svg="">
+                              <path fill="currentColor"
+                                d="M296 384h-80c-13.3 0-24-10.7-24-24V192h-87.7c-17.8 0-26.7-21.5-14.1-34.1L242.3 5.7c7.5-7.5 19.8-7.5 27.3 0l152.2 152.2c12.6 12.6 3.7 34.1-14.1 34.1H320v168c0 13.3-10.7 24-24 24zm216-8v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h136v8c0 30.9 25.1 56 56 56h80c30.9 0 56-25.1 56-56v-8h136c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z">
+                              </path>
+                            </svg><!-- <span class="glyphicon fa fa-upload"></span> -->
+                          </label>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group" id="renewPcPartnerPhotoImg">사진없음<img src="@@webRoot/assets/img/no-partner-img.png" alt="이미지 없음"
+                        style="width: 200px;"></div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <h1 class="h3 mb-2 text-gray-800">고객 댓글 보기</h1>
+
+          <div class="card shadow mb-4">
+            <div class="card-body">
+              <div class="reply">
+                <ul class="replay-list">
+                  <li class="replay-item">
+                    <div class="reply-head">
+                      <span class="reply-author">이문세</span>
+                      <span class="reply-date">2022-07-22 09:00</span>
+                    </div>
+                    <div class="reply-cont">
+                      <div class="reply-text">
+                        홍길동 손사님 감사합니다.너무 좋아요 골고루보상 플러스 ……… 테스트 테스트 테스트!!!
+                        앞으로도 또 이용하고 싶어요.
+                        감사합니다.
+                        홍길동 손사님 감사합니다.너무 좋아요 골고루보상 플러스 ……… 테스트 테스트 테스트!!!
+                        앞으로도 또 이용하고 싶어요.
+                        감사합니다.
+                      </div>
+                      <div class="reply-btn">
+                        <a href="#" class="btn btn-primary">
+                          <span class="text">관리자 답글</span>
+                        </a>
+                        <a href="#" class="btn btn-primary">
+                          <span class="text">삭제</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="reply-admin">
+                      <div class="replay-ad-cont">
+                        <span class="replay-ad-label">답글</span>
+                        <textarea class="replay-ad-text" name="" id="">
+저희 골고루 보상을 이용해 주셔서 감사합니다.
+                        </textarea>
+                      </div>
+                      <div class="reply-btn">
+                        <a href="#" class="btn btn-primary">
+                          <span class="text">수정</span>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="replay-item">
+                    <div class="reply-head">
+                      <span class="reply-author">이문세</span>
+                      <span class="reply-date">2022-07-22 09:00</span>
+                    </div>
+                    <div class="reply-cont">
+                      <div class="reply-text">
+                        홍길동 손사님 감사합니다.너무 좋아요 골고루보상 플러스 ……… 테스트 테스트 테스트!!!
+                        앞으로도 또 이용하고 싶어요.
+                        감사합니다.
+                      </div>
+                      <div class="reply-btn">
+                        <a href="#" class="btn btn-primary">
+                          <span class="text">관리자 답글</span>
+                        </a>
+                        <a href="#" class="btn btn-primary">
+                          <span class="text">삭제</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="reply-admin">
+                      <div class="replay-ad-cont">
+                        <span class="replay-ad-label">답글</span>
+                        <textarea class="replay-ad-text" name="" id="">
+저희 골고루 보상을 이용해 주셔서 감사합니다.
+                        </textarea>
+                      </div>
+                      <div class="reply-btn">
+                        <a href="#" class="btn btn-primary">
+                          <span class="text">수정</span>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="replay-item">
+                    <div class="reply-head">
+                      <span class="reply-author">이문세</span>
+                      <span class="reply-date">2022-07-22 09:00</span>
+                    </div>
+                    <div class="reply-cont">
+                      <div class="reply-text">
+                        홍길동 손사님 감사합니다.너무 좋아요 골고루보상 플러스 ……… 테스트 테스트 테스트!!!
+                        앞으로도 또 이용하고 싶어요.
+                        감사합니다.
+                      </div>
+                      <div class="reply-btn">
+                        <a href="#" class="btn btn-primary">
+                          <span class="text">관리자 답글</span>
+                        </a>
+                        <a href="#" class="btn btn-primary">
+                          <span class="text">삭제</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="reply-admin">
+                      <div class="replay-ad-cont">
+                        <span class="replay-ad-label">답글</span>
+                        <textarea class="replay-ad-text" name="" id="">
+저희 골고루 보상을 이용해 주셔서 감사합니다.
+                        </textarea>
+                      </div>
+                      <div class="reply-btn">
+                        <a href="#" class="btn btn-primary">
+                          <span class="text">수정</span>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <!-- /.container-fluid -->
+        </div>
+      </div>
+      <!-- End of Main Content -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="@@webRoot/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="@@webRoot/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="@@webRoot/assets/js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <link rel="stylesheet" href="@@webRoot/vendor/datatables/dataTables.bootstrap4.min.css">
+  <script src="@@webRoot/vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="@@webRoot/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+  <script>
+    // 네비활성화
+    $('.navbar-nav .member').eq(2).addClass('active');
+
+    // 날짜 선택
+    $('.date-row .btn').on('click', function (e) {
+      e.preventDefault();
+      $('.date-row .btn').removeClass('active');
+      $(this).addClass('active');
+    })
+
+    // 날짜 선택
+    $('.time-row .btn').on('click', function (e) {
+      e.preventDefault();
+      $('.time-row .btn').removeClass('active');
+      $(this).addClass('active');
+    })
+  </script>
+</body>
+
+</html>

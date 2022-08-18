@@ -306,6 +306,7 @@
 
   .date-row {
     flex-wrap: wrap;
+    margin-bottom: 1.5rem;
   
     .btn {
       height: 40px;
@@ -411,6 +412,10 @@
   }
 }
 
-@media screen and (min-width: 768px) {
-  
+// 폼 그룹
+.form-group {
+
+  label {
+    color: #000;
+  }
 }
