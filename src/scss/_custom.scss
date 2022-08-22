@@ -415,7 +415,13 @@
 // 폼 그룹
 .form-group {
 
-  label {
-    color: #000;
+  .al-c {
+    align-items: center;
+  }
+
+  .sel-label {
+    padding: 0 12px;
+    font-size: 14px;
+    white-space: nowrap;
   }
 }
