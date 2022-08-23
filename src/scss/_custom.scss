@@ -2,6 +2,13 @@
   font-size: 0.8em;
 }
 
+.btn {
+
+  .text {
+    white-space: nowrap;
+  }
+}
+
 // 로그인
 .login-wrap {
   display: flex;
@@ -423,5 +430,28 @@
     padding: 0 12px;
     font-size: 14px;
     white-space: nowrap;
+  }
+
+  .file-list {
+
+    .file-item {
+      font-size: 14px;
+    }
+  }
+
+  .inp-guide-txt {
+    color: #ea4335;
+  }
+}
+
+
+// 간격
+
+@media screen and (max-width: 575px) {
+  .xs-mt-0 {
+    margin-top: 0 !important;
+  }
+  .xs-mb-0 {
+    margin-bottom: 0 !important;
   }
 }
