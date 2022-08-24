@@ -156,6 +156,7 @@
     padding: 0.5rem 1rem;
   }
   .navbar-nav.sidebar.toggled {
+    overflow-y: auto;
     width: 15rem !important;
   }
   .navbar-nav.sidebar.toggled .nav-item .nav-link {

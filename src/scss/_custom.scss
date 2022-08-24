@@ -185,6 +185,7 @@
       }
       
       &.toggled {
+        overflow-y: auto;
         width: 15rem !important;
 
         .nav-item .nav-link {
