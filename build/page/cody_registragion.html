@@ -218,55 +218,84 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          <h1 class="h3 mb-2 text-gray-800">관리자 등록화면</h1>
+          <h1 class="h3 mb-2 text-gray-800">코디상담 등록화면</h1>
 
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
             <div class="card-body">
               <form class="user">
-                <div class="form-group xs-mb-0 row">
-                  <div class="col-sm-3 mb-3 mb-sm-0">
-                    <input class="effect-1" type="text" id="userId" placeholder="아이디">
-                    <span class="focus-border"></span>
-                  </div>
-                  <div class="col-sm-3">
-                    <a href="#" class="btn btn-primary pl-5 pr-5">
-                      <span class="text">중복확인</span>
-                    </a>
-                  </div>
-                </div>
-                <div class="form-group xs-mb-0 row">
-                  <div class="col-sm-3 mb-3 mb-sm-0">
-                    <input class="effect-1" type="password" id="password" placeholder="패스워드">
-                    <span class="focus-border"></span>
-                  </div>
-                  <div class="col-sm-3 mb-0">
-                    <input class="effect-1" type="password" id="password2" placeholder="패스워드 확인">
-                    <span class="focus-border"></span>
-                  </div>
-                  <div class="col-sm-3">
-                    <p class="inp-guide-txt text-xs mb-0 mt-sm-2">(특수기호,숫자,문자 포함 8자리 이상)</p>
-                  </div>
-                </div>
                 <div class="form-group row">
-                  <div class="col-sm-3 mb-3 mb-sm-0">
-                    <input class="effect-1" type="text" id="name" placeholder="이름">
+                  <div class="col-sm-3 d-flex al-c">
+                    <label class="small mb-1 sel-label" for="sex">대분류</label>
+                    <select class="form-control" id="sex">
+                      <option value="">선택</option>
+                      <option value="">변호사</option>
+                      <option value="">손해사정사</option>
+                      <option value="">탐정사</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-3">
+                    <input type="text" class="effect-1" id="customerName" placeholder="고객명">
                     <span class="focus-border"></span>
                   </div>
                   <div class="col-sm-3 mb-3 mb-sm-0">
                     <input type="text" class="effect-1" id="phoneNumber" placeholder="전화번호">
                     <span class="focus-border"></span>
                   </div>
-                  <div class="col-sm-3">
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-3 d-flex al-c">
+                    <label class="small mb-1 sel-label" for="sex">성별</label>
+                    <select class="form-control" id="sex">
+                      <option value="">선택</option>
+                      <option value="">남자</option>
+                      <option value="">여자</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-3 mb-3 mb-sm-0">
                     <input type="text" class="effect-1" id="birthday" placeholder="생년월일">
                     <span class="focus-border"></span>
                   </div>
                 </div>
                 <div class="form-group row">
-                  <div class="col-sm-12">
-                    <input type="email" class="effect-1" id="addr" placeholder="주소">
+                  <div class="col-sm-3">
+                    <a href="javascript:void(0);" id="btn-searchAddr" onclick="openDaumZipAddress('partner');return false;"
+                      class="btn btn-primary btn-default" style="height: 28px;padding-top: 0px;">
+                      주소검색
+                    </a>
+                    <label class="small mb-1 ml-2" for="zipcode">
+                      <h6>우편번호</h6>
+                    </label>
+                    <input class="form-control py-2" id="zipcode" type="text" spellcheck="false" data-ms-editor="true">
+                  </div>
+                  <div class="col-sm-4">
+                    <label class="small mb-1" for="addr1">
+                      <h6>주소</h6>
+                    </label>
+                    <input class="form-control py-2" id="addr1" type="text" spellcheck="false" data-ms-editor="true">
+                  </div>
+                  <div class="col-sm-4">
+                    <label class="small mb-1" for="addr2">
+                      <h6>상세주소</h6>
+                    </label>
+                    <input class="form-control py-2" id="addr2" type="text" spellcheck="false" data-ms-editor="true">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-3">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" id="modifyKatalkSendYn" class="custom-control-input" name="modifyKatalkSendYn" checked="checked">
+                      <label class="custom-control-label" for="modifyKatalkSendYn">담당 탐정사 및 고객에게 카톡 전송 체크</label>
+                   </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <input type="email" class="effect-1" id="" placeholder="담당자">
                     <span class="focus-border"></span>
                   </div>
+                </div>
+                <div class="form-group">
+                  <label class="small mb-1" for=""><h6>상담내용</h6></label>
+                  <textarea class="form-control col-sm-12 noresize" id="" rows="5" spellcheck="false" data-ms-editor="true"></textarea>
                 </div>
               </form>              
               <div class="btn-tbl-excel d-flex-e-s">
@@ -309,7 +338,7 @@
   
   <script>
     // 네비활성화
-    $('.navbar-nav .member').eq(4).addClass('active');
+    $('.navbar-nav .counsel').eq(2).addClass('active');
   </script>
 </body>
 
