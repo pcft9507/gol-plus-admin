@@ -364,11 +364,22 @@
   border-radius: 5px;
 }
 
+.form-group.al-c {
+  align-items: center;
+}
+
 .form-group .al-c {
   align-items: center;
 }
 
 .form-group .sel-label {
+  padding: 0 12px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.form-group .inp-label {
+  margin-bottom: 0;
   padding: 0 12px;
   font-size: 14px;
   white-space: nowrap;
