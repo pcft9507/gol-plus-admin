@@ -298,6 +298,10 @@
   &.dataTable {
     min-width: 1500px;
   }
+
+  &.sm {
+    min-width: auto;
+  }
 }
 
 // 인풋텍스트
@@ -444,6 +448,20 @@
     padding: 0 12px;
     font-size: 14px;
     white-space: nowrap;
+
+    h6 {
+      margin-bottom: 0;
+    }
+  }
+
+  .inp-label2 {
+    margin-bottom: 0;
+    font-size: 14px;
+    white-space: nowrap;
+
+    h6 {
+      margin-bottom: 0;
+    }
   }
 
   .file-list {
@@ -468,4 +486,10 @@
   .xs-mb-0 {
     margin-bottom: 0 !important;
   }
+}
+
+// 공지상세
+.notice-content {
+  max-height: 500px;
+  overflow-y: auto;
 }
