@@ -1,193 +1,11 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="../assets/css/sb-admin-2.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/common.css">
-  <link rel="stylesheet" href="../assets/css/style.css">
-  <script src="../assets/js/jquery-3.6.0.min.js"></script>
-  <script src="../assets/js/ui.js"></script>
-  <title>골고루 보상</title>
-</head>
-
+@@include('@@webRoot/include/head.html')
 
 <body id="page-top">
 
   <!-- Page Wrapper -->
   <div id="wrapper">
 
-    <!-- Sidebar -->
-<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion toggled" id="accordionSidebar">
-
-  <!-- Sidebar - Brand -->
-  <a class="sidebar-brand logo" href="../page/main.html">
-    <img src="../assets/img/logo.png">
-  </a>
-
-  <!-- Divider -->
-  <hr class="sidebar-divider">
-
-  <!-- Heading -->
-  <div class="sidebar-heading big">
-    회원
-  </div>
-
-  <!-- Nav Item - Pages Collapse Menu -->
-  <li class="nav-item member">
-    <a class="nav-link collapsed" href="#">
-      <span>일반회원</span>
-    </a>
-  </li>
-  <li class="nav-item member">
-    <a class="nav-link collapsed" href="#">
-      <span>변호사 파트너</span>
-    </a>
-  </li>
-  <li class="nav-item member">
-    <a class="nav-link collapsed" href="#">
-      <span>손해사정사 파트너</span>
-    </a>
-  </li>
-  <li class="nav-item member">
-    <a class="nav-link collapsed" href="#">
-      <span>탐정사 파트너</span>
-    </a>
-  </li>
-  <li class="nav-item member">
-    <a class="nav-link collapsed" href="#">
-      <span>관리자</span>
-    </a>
-  </li>
-
-  <!-- Divider -->
-  <hr class="sidebar-divider">
-
-  <!-- Heading -->
-  <div class="sidebar-heading big">
-    상담
-  </div>
-
-  <!-- Nav Item - Pages Collapse Menu -->
-  <li class="nav-item counsel">
-    <a class="nav-link collapsed" href="#">
-      <span>변호사 상담</span>
-    </a>
-  </li>
-  <li class="nav-item counsel">
-    <a class="nav-link collapsed" href="#">
-      <span>손해사정사 상담</span>
-    </a>
-  </li>
-  <li class="nav-item counsel">
-    <a class="nav-link collapsed" href="#">
-      <span>탐정사 상담</span>
-    </a>
-  </li>
-  <li class="nav-item counsel">
-    <a class="nav-link collapsed" href="#">
-      <span>코디 상담</span>
-    </a>
-  </li>
-
-  <!-- Divider -->
-  <hr class="sidebar-divider d-none d-md-block">
-  <div class="sidebar-heading big">
-    공지
-  </div>
-
-  <!-- Nav Item - Pages Collapse Menu -->
-  <li class="nav-item notice">
-    <a class="nav-link collapsed" href="#">
-      <span>변호사 공지</span>
-    </a>
-  </li>
-  <li class="nav-item notice">
-    <a class="nav-link collapsed" href="#">
-      <span>손해사정사 공지</span>
-    </a>
-  </li>
-  <li class="nav-item notice">
-    <a class="nav-link collapsed" href="#">
-      <span>탐정사 공지</span>
-    </a>
-  </li>      
-  <li class="nav-item notice">
-    <a class="nav-link collapsed" href="#">
-      <span>고객 공지</span>
-    </a>
-  </li>      
-  <!-- Divider -->
-  <hr class="sidebar-divider d-none d-md-block">
-  <div class="sidebar-heading big">
-    이벤트
-  </div>
-
-  <!-- Nav Item - Pages Collapse Menu -->
-  <li class="nav-item">
-    <a class="nav-link collapsed" href="#">
-      <span>이벤트</span>
-    </a>
-  </li>
-
-  <!-- Divider -->
-  <hr class="sidebar-divider d-none d-md-block">
-  <div class="sidebar-heading big">
-    통계
-  </div>
-
-  <li class="nav-item">
-    <a class="nav-link collapsed" href="#">
-      <span>변호사 상담 건수</span>
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link collapsed" href="#">
-      <span>손해사정사 상담 건수</span>
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link collapsed" href="#">
-      <span>탐정사 상담 건수</span>
-    </a>
-  </li>      
-
-  <!-- Divider -->
-  <hr class="sidebar-divider d-none d-md-block">
-  <div class="sidebar-heading big">
-    제휴문의
-  </div>
-
-  <li class="nav-item">
-    <a class="nav-link collapsed" href="#">
-      <span>변호사 제휴문의</span>
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link collapsed" href="#">
-      <span>손해사정사 제휴문의</span>
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link collapsed" href="#">
-      <span>탐정사 제휴문의</span>
-    </a>
-  </li>      
-
-  <!-- Divider -->
-  <hr class="sidebar-divider d-none d-md-block">
-  <div class="sidebar-heading big">
-    카톡전송
-  </div>
-
-  <li class="nav-item">
-    <a class="nav-link collapsed" href="#">
-      <span>카톡전송</span>
-    </a>
-  </li>
-</ul>
-<!-- End of Sidebar -->
+    @@include('@@webRoot/include/header.html')
 
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
@@ -195,30 +13,13 @@
       <!-- Main Content -->
       <div id="content">
 
-        <!-- Topbar -->
-<nav class="navbar navbar-expand navbar-light bg-white topbar static-top shadow">
-
-  <!-- Sidebar Toggle (Topbar) -->
-  <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-    <i class="fa fa-bars"></i>
-  </button>
-
-  <div class="user-row">
-    <div class="hello-txt">홍길동님 오늘도 활기찬 하루되세요</div>
-
-    <a href="#" class="btn btn-success btn-sm">
-      <span class="text">로그아웃</span>
-    </a>
-  </div>
-
-</nav>
-<!-- End of Topbar -->
+        @@include('@@webRoot/include/topbar.html')
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          <h1 class="h3 mb-2 text-gray-800">변호사 상담 리스트</h1>
+          <h1 class="h3 mb-2 text-gray-800">손해사정사 상담 리스트</h1>
 
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
@@ -625,18 +426,18 @@
   </a>
 
   <!-- Bootstrap core JavaScript-->
-  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="@@webRoot/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Core plugin JavaScript-->
-  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="@@webRoot/vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for all pages-->
-  <script src="../assets/js/sb-admin-2.min.js"></script>
+  <script src="@@webRoot/assets/js/sb-admin-2.min.js"></script>
 
   <!-- Page level plugins -->
-  <link rel="stylesheet" href="../vendor/datatables/dataTables.bootstrap4.min.css">
-  <script src="../vendor/datatables/jquery.dataTables.min.js"></script>
-  <script src="../vendor/datatables/dataTables.bootstrap4.min.js"></script>
+  <link rel="stylesheet" href="@@webRoot/vendor/datatables/dataTables.bootstrap4.min.css">
+  <script src="@@webRoot/vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="@@webRoot/vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
   <script>
     $(document).ready(function() {
@@ -644,7 +445,7 @@
     });    
     
     // 네비활성화
-    $('.navbar-nav .notice').eq(0).addClass('active');
+    $('.navbar-nav .notice').eq(1).addClass('active');
 
     // 상세로 이동
     function goDetail (pageIndex) {

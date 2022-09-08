@@ -218,64 +218,24 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          <h1 class="h3 mb-2 text-gray-800">변호사 공지</h1>
+          <h1 class="h3 mb-2 text-gray-800">손해사정사 공지 등록</h1>
 
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
             <div class="card-body">
-              <div class="form-group d-flex al-c">
-                <p class="subject">제목이 들어갑니다.</p>
-              </div>
-              <div class="form-group">
-                <label class="small mb-1" for="introduce"><h6>내용</h6></label>
-                <div class="notice-content">
-                  공지 내용이 들어갑니다.<br>
-                  공지 내용이 들어갑니다.<br>
-                  공지 내용이 들어갑니다.<br>
-                  공지 내용이 들어갑니다.<br>
-                  공지 내용이 들어갑니다.<br>
-                  공지 내용이 들어갑니다.<br>
-                  공지 내용이 들어갑니다.<br>
-                  공지 내용이 들어갑니다.<br>
-                  공지 내용이 들어갑니다.<br>
-                  공지 내용이 들어갑니다.<br>
-                  공지 내용이 들어갑니다.<br>
-                  공지 내용이 들어갑니다.<br>
-                  공지 내용이 들어갑니다.<br>
-                  공지 내용이 들어갑니다.<br>
-                  공지 내용이 들어갑니다.<br>
-                  공지 내용이 들어갑니다.<br>
-                  공지 내용이 들어갑니다.<br>
-                  공지 내용이 들어갑니다.<br>
-                  공지 내용이 들어갑니다.<br>
-                  공지 내용이 들어갑니다.<br>
-                  공지 내용이 들어갑니다.<br>
-                  공지 내용이 들어갑니다.<br>
-                  공지 내용이 들어갑니다.<br>
-                  공지 내용이 들어갑니다.<br>
-                  공지 내용이 들어갑니다.<br>
-                  공지 내용이 들어갑니다.<br>
-                  공지 내용이 들어갑니다.<br>
-                  공지 내용이 들어갑니다.<br>
-                  공지 내용이 들어갑니다.<br>
-                  공지 내용이 들어갑니다.<br>
-                  공지 내용이 들어갑니다.<br>
-                  공지 내용이 들어갑니다.<br>
-                  공지 내용이 들어갑니다.<br>
-                  공지 내용이 들어갑니다.<br>
-                  공지 내용이 들어갑니다.<br>
-                  공지 내용이 들어갑니다.<br>
-                  공지 내용이 들어갑니다.<br>
-                  공지 내용이 들어갑니다.<br>
-                  공지 내용이 들어갑니다.<br>
-                  공지 내용이 들어갑니다.<br>
-                  공지 내용이 들어갑니다.<br>
-                  공지 내용이 들어갑니다.<br>
-                  공지 내용이 들어갑니다.<br>
-                  공지 내용이 들어갑니다.<br>
-                  공지 내용이 들어갑니다.<br>
+              <form class="user">
+                <div class="form-group d-flex al-c">
+                  <label class="inp-label2" for="subject"><h6>제목</h6></label>
+                  <div class="col-sm-3 mb-3 mb-sm-0">
+                    <input type="text" class="effect-1" id="subject">
+                    <span class="focus-border"></span>
+                  </div>
                 </div>
-              </div>
+                <div class="form-group">
+                  <label class="small mb-1" for="introduce"><h6>내용</h6></label>
+                  <textarea class="form-control col-sm-12 noresize" id="introduce" rows="5" spellcheck="false" data-ms-editor="true"></textarea>
+                </div>
+              </form>         
               <div class="btn-tbl-excel d-flex-e-s">
                 <a href="#" class="btn btn-primary pl-5 pr-5">
                   <span class="text">등록</span>
@@ -315,7 +275,7 @@
 
   <script>
     // 네비활성화
-    $('.navbar-nav .notice').eq(0).addClass('active');
+    $('.navbar-nav .notice').eq(1).addClass('active');
   </script>
 </body>
 
