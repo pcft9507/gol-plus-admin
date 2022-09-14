@@ -493,3 +493,12 @@
   max-height: 500px;
   overflow-y: auto;
 }
+
+// 테이블 버튼
+.dt-btn-wrap {
+  
+  .btn {
+    min-width: 80px;
+    margin-left: 10px;
+  }
+}
