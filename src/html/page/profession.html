@@ -1,0 +1,549 @@
+@@include('@@webRoot/include/head.html')
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    @@include('@@webRoot/include/header.html')
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        @@include('@@webRoot/include/topbar.html')
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <h1 class="h3 mb-2 text-gray-800">전문직 제휴문의</h1>
+
+          <!-- DataTales Example -->
+          <div class="card shadow mb-4">
+            <div class="card-body">
+              <div class="btn-tbl-excel">
+                <a href="#" class="btn btn-success btn-icon-split btn-sm">
+                  <span class="icon text-white-50">
+                    <i class="fas fa-clipboard-list fa-2x0"></i>
+                  </span>
+                  <span class="text">엑셀출력</span>
+                </a>
+              </div>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>No.</th>
+                      <th>전문직정</th>
+                      <th>이름</th>
+                      <th>전화번호</th>
+                      <th>주소</th>
+                      <th>전문가 번호</th>
+                      <th>작성일시</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr ondblclick="goDetail(1);">
+                      <td>1</td>
+                      <td>변호사</td>
+                      <td>홍길동</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>2</td>
+                      <td>손해사정사</td>
+                      <td>이문세</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>3</td>
+                      <td>손해사정사</td>
+                      <td>이문세</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>4</td>
+                      <td>손해사정사</td>
+                      <td>이문세</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>5</td>
+                      <td>손해사정사</td>
+                      <td>이문세</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>6</td>
+                      <td>손해사정사</td>
+                      <td>이문세</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>7</td>
+                      <td>손해사정사</td>
+                      <td>이문세</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>8</td>
+                      <td>손해사정사</td>
+                      <td>이문세</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>9</td>
+                      <td>손해사정사</td>
+                      <td>이문세</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>10</td>
+                      <td>손해사정사</td>
+                      <td>이문세</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>1</td>
+                      <td>변호사</td>
+                      <td>홍길동</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>2</td>
+                      <td>손해사정사</td>
+                      <td>이문세</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>3</td>
+                      <td>손해사정사</td>
+                      <td>이문세</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>4</td>
+                      <td>손해사정사</td>
+                      <td>이문세</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>5</td>
+                      <td>손해사정사</td>
+                      <td>이문세</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>6</td>
+                      <td>손해사정사</td>
+                      <td>이문세</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>7</td>
+                      <td>손해사정사</td>
+                      <td>이문세</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>8</td>
+                      <td>손해사정사</td>
+                      <td>이문세</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>9</td>
+                      <td>손해사정사</td>
+                      <td>이문세</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>10</td>
+                      <td>손해사정사</td>
+                      <td>이문세</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr><tr ondblclick="goDetail(1);">
+                      <td>1</td>
+                      <td>변호사</td>
+                      <td>홍길동</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>2</td>
+                      <td>손해사정사</td>
+                      <td>이문세</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>3</td>
+                      <td>손해사정사</td>
+                      <td>이문세</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>4</td>
+                      <td>손해사정사</td>
+                      <td>이문세</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>5</td>
+                      <td>손해사정사</td>
+                      <td>이문세</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>6</td>
+                      <td>손해사정사</td>
+                      <td>이문세</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>7</td>
+                      <td>손해사정사</td>
+                      <td>이문세</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>8</td>
+                      <td>손해사정사</td>
+                      <td>이문세</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>9</td>
+                      <td>손해사정사</td>
+                      <td>이문세</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>10</td>
+                      <td>손해사정사</td>
+                      <td>이문세</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr><tr ondblclick="goDetail(1);">
+                      <td>1</td>
+                      <td>변호사</td>
+                      <td>홍길동</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>2</td>
+                      <td>손해사정사</td>
+                      <td>이문세</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>3</td>
+                      <td>손해사정사</td>
+                      <td>이문세</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>4</td>
+                      <td>손해사정사</td>
+                      <td>이문세</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>5</td>
+                      <td>손해사정사</td>
+                      <td>이문세</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>6</td>
+                      <td>손해사정사</td>
+                      <td>이문세</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>7</td>
+                      <td>손해사정사</td>
+                      <td>이문세</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>8</td>
+                      <td>손해사정사</td>
+                      <td>이문세</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>9</td>
+                      <td>손해사정사</td>
+                      <td>이문세</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>10</td>
+                      <td>손해사정사</td>
+                      <td>이문세</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr><tr ondblclick="goDetail(1);">
+                      <td>1</td>
+                      <td>변호사</td>
+                      <td>홍길동</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>2</td>
+                      <td>손해사정사</td>
+                      <td>이문세</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>3</td>
+                      <td>손해사정사</td>
+                      <td>이문세</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>4</td>
+                      <td>손해사정사</td>
+                      <td>이문세</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>5</td>
+                      <td>손해사정사</td>
+                      <td>이문세</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>6</td>
+                      <td>손해사정사</td>
+                      <td>이문세</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>7</td>
+                      <td>손해사정사</td>
+                      <td>이문세</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>8</td>
+                      <td>손해사정사</td>
+                      <td>이문세</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>9</td>
+                      <td>손해사정사</td>
+                      <td>이문세</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                    <tr ondblclick="goDetail(1);">
+                      <td>10</td>
+                      <td>손해사정사</td>
+                      <td>이문세</td>
+                      <td>010-1234-5678</td>
+                      <td>서울시 구로디지털단지 23로 stv타워 1203호</td>
+                      <td>B3R2342009</td>
+                      <td>2022-08-08</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          
+          <!-- /.container-fluid -->
+        </div>
+      </div>
+      <!-- End of Main Content -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="@@webRoot/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="@@webRoot/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="@@webRoot/assets/js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <link rel="stylesheet" href="@@webRoot/vendor/datatables/dataTables.bootstrap4.min.css">
+  <script src="@@webRoot/vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="@@webRoot/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      $('#dataTable').DataTable();
+    });    
+    
+    // 네비활성화
+    $('.navbar-nav .profession').eq(0).addClass('active');
+
+    // 상세로 이동
+    function goDetail (pageIndex) {
+      console.log(pageIndex + '상세로 이동');
+    }
+
+  </script>
+</body>
+
+</html>
