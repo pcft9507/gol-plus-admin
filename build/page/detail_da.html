@@ -763,13 +763,12 @@
       $(this).addClass('active');
     })
 
-    // 날짜 선택
+    // 시간 선택
     $('.time-row .btn').on('click', function (e) {
       e.preventDefault();
-      $('.time-row .btn').removeClass('active');
-      $(this).addClass('active');
-    })
-  </script>
+      $(this).toggleClass('active');
+    });
+</script>
 </body>
 
 </html>
