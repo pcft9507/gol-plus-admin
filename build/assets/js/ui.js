@@ -8,4 +8,19 @@ $(document).ready(function () {
       $(this).removeClass('is-active');
     }
   });
+
+  // 인풋 레이블
+  $('.effect-1').inpLabel();
 })
+
+$.fn.inpLabel = function () {
+  let inpArray = [];
+  let inpId = [];
+  let inpPlaceholder = [];
+  return this.each(function (i) {
+    inpArray[i] = $(this);
+    inpId[i] = $(this).attr('id');
+    inpPlaceholder[i] = $(this).attr('placeholder');
+    inpArray[i].after('<label for="' + inpId[i] + '" class="inp-label">' + inpPlaceholder[i] + '</label>');
+  });
+}
