@@ -1,3 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'S-CoreDream';
+}
+
+.topbar {
+  height: 80px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+@media screen and(max-width: 767px) {
+  .topbar {
+    height: 4.375rem;
+  }
+}
+
+.bgc-black {
+  background-color: #000;
+}
+
 .text-xs {
   font-size: 0.8em;
 }
@@ -89,6 +110,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  #wrapper #content-wrapper {
+    width: calc(100% - 280px);
+  }
+
   .container-fluid {
     height: calc(100% - 70px);
     overflow-y: auto;
@@ -98,64 +123,241 @@
 
 // 헤더 사이드네비
 .navbar-nav {
+  display: block;
   position: fixed;
   top: 70px;
   bottom: 0;
   left: 0;
   z-index: 10;
-  overflow-x: hidden;
   overflow-y: auto;
   width: 100%;
-  height: 100%;
-
-  &::-webkit-scrollbar {
-    width: 7px;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.2);
-  }
-
-  &::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.1);
-  }
+  min-height: auto;
 
   &.sidebar {
 
+    .side-top {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+      border-bottom: 1px solid #152131;
+    }
+
     .logo {
+      display: inline-flex;
+      width: 106px;
+      height: auto;
+      padding: 0;
       text-align: left;
-      max-width: 184px;
     }
-  
-    .sidebar-heading {
-      color: #fff;
-      font-weight: normal;
-      font-size: 1.2rem;
-      text-align: left;
-      padding: 0 0.5rem;
-    }
-  
-    .nav-item {
-      text-align: left;
 
-      &:hover,
-      &.active {
+    .side-cont {
+      position: relative;
+      padding: 20px;
 
-        .nav-link {
+      .user-info {
+        overflow: hidden;
+        border-radius: 8px;
+        background-color: rgba(255, 255, 255, 0.1);
+      }
 
-          span {
-            font-weight: 700;
+      .info-top {
+        padding: 20px;
+      }
+
+      .info-img {
+        overflow: hidden;
+        width: 88px;
+        height: 88px;
+        margin: 0 auto;
+        border-radius: 8px;
+        border: 1px solid #525b6b;
+      }
+
+      .keywords {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-top: 20px;
+        white-space: nowrap;
+        color: #cc9d76;
+        height: 16px;
+
+        .keyword {
+          position: relative;
+          margin-right: 5px;
+          color: #cc9d76;
+          font-family: 'rokaf-slab';
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 16px;
+          vertical-align: top;
+
+          &:after {
+            content: ',';
+            color: #cc9d76;
+            font-family: 'rokaf-slab';
+            font-weight: 500;
+            font-size: 14px;
+          }
+
+          &:last-child {
+
+            &:after {
+              display: none;
+            }
           }
         }
       }
-  
-      .nav-link {
-        width: 100%;
-        padding: 0.5rem 0.5rem;
-        text-align: left;
-  
-        span {
-          font-size: 1rem;
+
+      .user-name {
+        margin-top: 10px;
+        color: #fefefe;
+        font-family: 'rokaf-slab';
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 1;
+      }
+
+      .belong {
+        display: flex;
+        margin-top: 10px;
+
+        .belong-text {
+          margin-right: 5px;
+          color: #939393;
+          font-family: 'rokaf-slab';
+          font-weight: 500;
+          font-size: 10px;
+          line-height: 1;
+        }
+      }
+
+      .contacts {
+        display: flex;
+        margin-top: 12px;
+
+        .chip {
+          margin-right: 4px;
+          padding: 4px 6px;
+          color: #939393;
+          font-family: 'rokaf-slab';
+          font-weight: 500;
+          font-size: 10px;
+          line-height: 1;
+          border-radius: 4px;
+          background-color: #313131;
+
+          &.active {
+            color: #fff;
+            background-color: #cc9d76;
+          }
+        }
+      }
+
+      .user-menu {
+        margin-bottom: 0;
+        background-color: #313131;
+
+        li {
+          display: flex;
+          height: 42px;
+          align-items: center;
+          padding-left: 16px;
+          border-bottom: 1px solid #1a1a1a;
+
+          a {
+            position: relative;
+            padding-left: 36px;
+            color: #939393;
+            font-weight: 500;
+            font-size: 14px;
+
+            &:before {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 20px;
+              height: 20px;
+              background-size: 100%;
+            }
+
+            &.ico1 {
+
+              &:before {
+                background-image: url(/assets/img/user-info-menu-ico1.png);
+              }
+            }
+
+            &.ico2 {
+
+              &:before {
+                background-image: url(/assets/img/user-info-menu-ico2.png);
+              }
+            }
+
+            &.ico3 {
+
+              &:before {
+                background-image: url(/assets/img/user-info-menu-ico3.png);
+              }
+            }
+          }
+        }
+      }
+
+      .side-bar-menu {
+        margin-top: 40px;
+
+        ul {
+          margin-bottom: 0;
+        }
+
+        li {
+          margin-bottom: 4px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          a {
+            display: flex;
+            align-items: center;
+            height: 42px;
+            color: #939393;
+            font-weight: 500;
+            font-size: 16px;
+            background: url(/assets/img/Icon-ionic-ios-arrow-forward@2x.png) 100% 50%/6px 11px no-repeat;
+          }
+        }
+      }
+
+      .fixed-menu {
+        margin: 50px -20px -20px;
+
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          margin-bottom: 0;
+
+          li {
+            width: 50%;
+            border-top: 1px solid #313131;
+
+            &:nth-of-type(2n+1) {
+              border-right: 1px solid #313131;
+            }
+
+            a {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 40px;
+              color: #939393;
+              font-weight: 500;
+              font-size: 12px;
+            }
+          }
         }
       }
     }
@@ -165,32 +367,77 @@
 @media screen and (min-width: 768px) {
   .navbar-nav {
     position: static;
+    width: 280px !important;
+
+    &::-webkit-scrollbar {
+      width: 7px;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.2);
+    }
+  
+    &::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.1);
+    }
 
     &.sidebar {
 
       &.toggeled {
         overflow-y: auto;
       }
-
-      .logo {
-        width: 90%;
-      }
-
-      .sidebar-heading {
-        padding: 0 1rem;
-      }
-
-      .nav-item .nav-link {
-        padding: 0.5rem 1rem;
-      }
       
+      .side-top {
+        height: 80px;
+      }
+  
+      .logo {
+        width: 212px;
+      }
       &.toggled {
         overflow-y: auto;
-        width: 15rem !important;
+        width: 280px !important;
 
         .nav-item .nav-link {
           width: 10rem;
         }        
+      }
+
+      .side-cont {
+        height: calc(100% - 80px);
+
+        .fixed-menu {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          margin: 0;
+  
+          ul {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 0;
+  
+            li {
+              width: 50%;
+              border-top: 1px solid #313131;
+  
+              &:nth-of-type(2n+1) {
+                border-right: 1px solid #313131;
+              }
+  
+              a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 40px;
+                color: #939393;
+                font-weight: 500;
+                font-size: 12px;
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -205,20 +452,12 @@
       display: flex;
       justify-content: flex-end;
       align-items: center;
+      flex-wrap: wrap;
       position: absolute;
       top: 50%;
       right: 1rem;
       max-width: calc(100% - 5rem);
       transform: translateY(-50%);
-  
-      .btn {
-        margin-left: 1rem;
-        font-size: 1rem;
-
-        .text {
-          white-space: nowrap;
-        }
-      }
     }
   
     #sidebarToggleTop {
@@ -227,20 +466,79 @@
   }
 }
 
-
-
 .topbar {
 
-  .hello-txt {
-    font-size: 0.75rem;
+  .company-info {
+    display: none;
+    color: #939393;
+    font-family: 'rokaf-slab';
+    font-size: 16px;
+  }
+
+  .user-row {
+
+    .img {
+      display: none;
+      overflow: hidden;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    .hello-txt {
+      color: #000;
+      font-size: 12px;
+    }
+
+    .btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      height: 30px;
+      margin-left: 10px;
+      border-radius: 8px;
+      border: 1px solid #0464f9;
+
+      .text {
+        color: #0464f9;
+        font-weight: 500;
+        font-size: 10px;
+      }
+    }
   }
 }
 
 @media screen and (min-width: 768px) {
   .topbar {
 
-    .hello-txt {
-      font-size: 1rem;
+    .company-info {
+      display: block;
+    }
+  
+    .user-row {
+      .img {
+        display: block;
+        width: 48px;
+        height: 48px;
+      }
+  
+      .hello-txt {
+        margin-left: 20px;
+        font-size: 14px;
+      }
+
+      .btn {
+        width: 84px;
+        height: 36px;
+        margin-left: 40px;
+        border-radius: 8px;
+        border: 1px solid #0464f9;
+  
+        .text {
+          font-size: 14px;
+        }
+      }      
     }
   }
 }
@@ -525,5 +823,39 @@
   .btn {
     min-width: 80px;
     margin-left: 10px;
+  }
+}
+
+.card {
+
+  .card-header {
+    background-color: #152131;
+
+    h6 {
+      color: #fff;
+      font-family: 'rokaf-slab';
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1;
+    }
+  }
+}
+
+@media screen and (min-width: 767px) {
+
+  .card-header {
+    height: 60px;
+
+    &.lawyer {
+      background-color: #0b2b5c;
+    }
+
+    &.da {
+      background-color: #003535;
+    }
+
+    &.detective {
+      background-color: #4c0a15;
+    }
   }
 }
