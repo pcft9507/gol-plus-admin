@@ -567,14 +567,22 @@
   margin-bottom: 10px;
 }
 
+#dataTable_wrapper {
+  padding-top: 10px;
+}
+
 // 회원리스트 테이블
 #dataTable {
+  border-collapse: collapse !important;
 
   thead {
 
     th {
       padding: 0.5rem;
       font-size: 0.85rem;
+      border: 1px solid #ddd;
+      border-bottom-width: 1px;
+      border-bottom-color: #a0a0a0;
     }
   }
 
@@ -583,12 +591,25 @@
     tr {
       cursor: pointer;
 
+      &:nth-of-type(2n+1) {
+        background-color: #f7f7f7;
+      }
+
       td {
         font-size: 0.75rem;
+
+        input[type=checkbox] {
+          width: 16px;
+          height: 16px;
+        }
       }
     }
   }
 
+  .table-bordered td, 
+  .table-bordered th {
+    border-color: #ddd;
+  }
 } 
 
 .table {
@@ -669,6 +690,7 @@
       height: 40px;
       margin-right: 20px;
       white-space: nowrap;
+      border: 2px solid transparent;
   
       &.active {
         color: orange;
@@ -856,6 +878,45 @@
 
     &.detective {
       background-color: #4c0a15;
+    }
+  }
+}
+
+.btn-primary {
+  background-color: #0464f9;
+  border-color: #0464f9;
+
+  &.out-line {
+    background-color: #fff;
+
+    .text {
+      color: #0464f9;
+    }
+  }
+
+  &:hover {
+    background-color: #0464f9;
+    border-color: #0464f9;
+  }
+}
+
+.custom-checkbox {
+
+  .custom-control-label {
+
+    &:before {
+      top: 50%;
+      width: 20px;
+      height: 20px;
+      transform: translateY(-50%);
+      border-radius: 2px;
+    }
+  
+    &:after {
+      top: 50%;
+      width: 20px;
+      height: 20px;
+      transform: translateY(-50%);
     }
   }
 }

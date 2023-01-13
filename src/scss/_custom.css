@@ -494,17 +494,42 @@
   margin-bottom: 10px;
 }
 
+#dataTable_wrapper {
+  padding-top: 10px;
+}
+
+#dataTable {
+  border-collapse: collapse !important;
+}
+
 #dataTable thead th {
   padding: 0.5rem;
   font-size: 0.85rem;
+  border: 1px solid #ddd;
+  border-bottom-width: 1px;
+  border-bottom-color: #a0a0a0;
 }
 
 #dataTable tbody tr {
   cursor: pointer;
 }
 
+#dataTable tbody tr:nth-of-type(2n+1) {
+  background-color: #f7f7f7;
+}
+
 #dataTable tbody tr td {
   font-size: 0.75rem;
+}
+
+#dataTable tbody tr td input[type=checkbox] {
+  width: 16px;
+  height: 16px;
+}
+
+#dataTable .table-bordered td,
+#dataTable .table-bordered th {
+  border-color: #ddd;
 }
 
 .table.dataTable {
@@ -599,6 +624,7 @@
   height: 40px;
   margin-right: 20px;
   white-space: nowrap;
+  border: 2px solid transparent;
 }
 
 .card .time-row .btn.active {
@@ -757,4 +783,37 @@
   .card-header.detective {
     background-color: #4c0a15;
   }
+}
+
+.btn-primary {
+  background-color: #0464f9;
+  border-color: #0464f9;
+}
+
+.btn-primary.out-line {
+  background-color: #fff;
+}
+
+.btn-primary.out-line .text {
+  color: #0464f9;
+}
+
+.btn-primary:hover {
+  background-color: #0464f9;
+  border-color: #0464f9;
+}
+
+.custom-checkbox .custom-control-label:before {
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  transform: translateY(-50%);
+  border-radius: 2px;
+}
+
+.custom-checkbox .custom-control-label:after {
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  transform: translateY(-50%);
 }
