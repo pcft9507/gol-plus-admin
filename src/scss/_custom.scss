@@ -920,3 +920,12 @@
     }
   }
 }
+
+.bg-login {
+  background: url($img + 'login_bg.png') 0/cover;
+}
+
+.btn-login {
+  color: #FEFEFE;
+  background-color: #CC9D76;
+}
