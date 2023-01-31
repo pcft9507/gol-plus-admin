@@ -116,30 +116,36 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          <h1 class="h3 mb-2">변호사 공지 등록</h1>
+          <h1 class="h3 mb-2">문의 및 고객센터</h1>
 
-          <!-- DataTales Example -->
-          <div class="card shadow mb-4">
-            <div class="card-body">
-              <form class="user">
-                <div class="form-group row">
-                  <div class="col-sm-12">
-                    <input class="effect-1" type="text" id="" placeholder="제목">
-                    <span class="focus-border"></span>
-                  </div>
+          <div class="customer-center-container">
+            <div class="col-info">
+              <div class="info-top">
+                <p class="txt1">고객 & 전문가와의 <strong>신뢰</strong>를 바탕으로</p>
+                <p class="txt2">골고루팀은 서비스의 편의와 고민해결을 위해 항상 열려 있습니다.</p>
+                
+                <div class="call-num">
+                  <a href="tel:1670-2456">1670-2456</a>
                 </div>
-                <div class="form-group">
-                  <label class="small mb-1" for="introduce"><h6>내용</h6></label>
-                  <textarea class="form-control col-sm-12 noresize" id="introduce" rows="5" spellcheck="false" data-ms-editor="true"></textarea>
+                
+                <ul class="menu-ask">
+                  <li><a href="#">서비스 관련 카카오톡 문의</a></li>
+                  <li><a href="#">제휴 문의하기</a></li>
+                </ul>
+              </div>
+
+              <div class="info-guide">
+                <p class="guide-txt1">※  고객센터 운영시간  ※</p>
+                <div class="guide-txt2">
+                  <span>평일 : 08시 30분 ~ 17시</span>
+                  <span>점심시간 : 11시 30분 ~ 12시 30분</span>
                 </div>
-              </form>         
-              <div class="btn-tbl-excel d-flex-e-s">
-                <a href="#" class="btn btn-primary pl-5 pr-5">
-                  <span class="text">등록</span>
-                </a>
+                <p class="guide-txt3">주말 및 공휴일은 고객센터를 운영하지 않습니다.</p>
               </div>
             </div>
+            <div class="col-poster"><img src="../assets/img/img-customer-center.jpg"></div>
           </div>
+          
           <!-- /.container-fluid -->
         </div>
       </div>
@@ -171,8 +177,23 @@
   <script src="../vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
   <script>
+    $(document).ready(function() {
+      $('#dataTable').DataTable();
+    });    
+    
     // 네비활성화
-    $('.navbar-nav .notice').eq(0).addClass('active');
+    $('.navbar-nav .member').eq(4).addClass('active');
+
+    // 상세로 이동
+    function goDetail (pageIndex) {
+      console.log(pageIndex + '상세로 이동');
+    }
+
+    // 선택삭제
+    function deleteRow () {
+      console.log('선택삭제');
+    }
+
   </script>
 </body>
 

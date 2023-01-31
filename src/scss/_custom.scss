@@ -4,6 +4,10 @@
   font-family: 'S-CoreDream';
 }
 
+p {
+  margin-bottom: 0;
+}
+
 .topbar {
   height: 80px;
   border-bottom: 1px solid #e6e6e6;
@@ -660,55 +664,6 @@
   cursor: pointer;
 }
 
-.card {
-
-  .date-row {
-    flex-wrap: wrap;
-    margin-bottom: 1.5rem;
-  
-    .btn {
-      height: 40px;
-      margin-right: 20px;
-      padding: 25px;
-      white-space: nowrap;
-  
-      &.active {
-        color: #fff;
-        background: orange;
-      }
-
-      &:focus {
-        box-shadow: none;
-      }
-    }
-  }
-
-  .time-row {
-    flex-wrap: wrap;
-  
-    .btn {
-      height: 40px;
-      margin-right: 20px;
-      white-space: nowrap;
-      border: 2px solid transparent;
-  
-      &.active {
-        color: orange;
-        border: 2px solid orange;
-      }
-
-      &:focus {
-        box-shadow: none;
-      }
-    }
-  }
-
-  .upload-img {
-    width: 50px;
-    color: #000;
-  }
-}
-
 // 댓글
 .reply {
 
@@ -928,4 +883,219 @@
 .btn-login {
   color: #FEFEFE;
   background-color: #CC9D76;
+}
+
+h1.h3 {
+  color: #000;
+  font-family: 'rokaf-slab';
+  font-weight: 500;
+  line-height: 1;
+}
+
+@media screen and (min-width: 767px) {
+  h1.h3 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+
+  h1.h3 {
+
+    & + .card {
+      margin-top: 20px;
+    }
+  }
+}
+
+.customer-center-container {
+  margin-top: 20px;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  border: solid 1px #e6e6e6;
+  background-color: #fff;
+
+  .col-info {
+    padding: 40px 20px;
+
+    .txt1 {
+      color: #000;
+      font-weight: 600;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .txt2 {
+      margin-top: 10px;
+      font-weight: 500;
+      font-size: 12px;
+      text-align: center;
+    }
+
+    .call-num {
+      margin-top: 40px;
+      text-align: center;
+
+      a {
+        display: inline-flex;
+        color: #000;
+        font-family: 'rokaf-slab';
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 1;
+      }
+    }
+
+    .menu-ask {
+      margin-top: 40px;
+
+      li {
+        margin-bottom: 10px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        color: #152131;
+        font-weight: 600;
+        font-size: 16px;
+        border-radius: 8px;
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+        border: solid 1px #e6e6e6;
+        background-color: #f1f2f5;
+      }
+    }
+
+    .info-guide {
+      margin-top: 40px;
+
+      .guide-txt1 {
+        color: #cc9d76;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.36;
+      }
+
+      .guide-txt2 {
+        margin-top: 10px;
+
+        span {
+          display: block;
+          position: relative;
+          color: #313131;
+          font-weight: 500;
+          font-size: 14px;
+        }
+      }
+
+      .guide-txt3 {
+        margin-top: 10px;
+        color: #313131;
+        font-size: 14px;
+        line-height: 1.44;
+      }
+    }
+  }
+
+  .col-poster {
+    background-color: #94c5e0;
+  }
+}
+
+@media screen and (min-width: 767px) {
+
+  .customer-center-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    .col-info {
+      width: 545px;
+      padding: 80px 40px;
+  
+      .txt1 {
+        font-size: 28px;
+      }
+  
+      .txt2 {
+        margin-top: 20px;
+        font-size: 16px;
+      }
+  
+      .call-num {
+        margin-top: 80px;
+  
+        a {
+          font-weight: 700;
+          font-size: 48px;
+        }
+      }
+  
+      .menu-ask {
+        margin-top: 80px;
+  
+        li {
+          margin-bottom: 20px;
+        }
+  
+        a {
+          height: 80px;
+          font-size: 22px;
+        }
+      }
+  
+      .info-guide {
+        margin-top: 140px;
+  
+        .guide-txt1 {
+          font-size: 22px;
+        }
+  
+        .guide-txt2 {
+          margin-top: 20px;
+  
+          span {
+            display: inline-flex;
+            position: relative;
+            font-size: 16px;
+
+            & + span {
+              margin-left: 30px;
+
+              &:before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: -16px;
+                width: 1px;
+                height: 16px;
+                background-color: #313131;
+                transform: translteY(-50%);
+              }
+            }
+          }
+        }
+  
+        .guide-txt3 {
+          font-size: 16px;
+        }
+      }
+    }    
+
+    .col-poster {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: calc(100% - 545px);
+
+      img {
+        object-fit: cover;
+      }
+    }
+  }
 }
