@@ -60,6 +60,7 @@ p {
     margin: 0 auto;
   }
 
+
   .card-body-sub {
     width: 100%;
   }
@@ -110,7 +111,7 @@ p {
 
 .container-fluid {
   overflow-y: scroll;
-  padding: 20px;
+  padding: 20px 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -562,6 +563,45 @@ p {
   }
 }
 
+.reponsive-table {
+  min-width: auto !important;
+
+  th {
+    display: none;
+    padding: 10px;
+  }
+  td {
+    display: none;
+    padding: 10px;
+  }
+
+  .mo-view {
+    display: table-cell;
+  }
+}
+
+.card-body {
+  padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .card-body {
+    padding: 1.25rem;
+  }
+
+  .reponsive-table {
+
+    th {
+      display: table-cell;
+      padding: 0.75rem;
+    }
+    td {
+      display: table-cell;
+      padding: 0.75rem;
+    }
+  }  
+}
+
 .content {
   overflow: hidden;
   height: 100%;
@@ -583,7 +623,7 @@ p {
 
     th {
       padding: 0.5rem;
-      font-size: 0.85rem;
+      font-size: 10px;
       border: 1px solid #ddd;
       border-bottom-width: 1px;
       border-bottom-color: #a0a0a0;
@@ -600,7 +640,7 @@ p {
       }
 
       td {
-        font-size: 0.75rem;
+        font-size: 10px;
 
         input[type=checkbox] {
           width: 16px;
@@ -624,6 +664,26 @@ p {
 
   &.sm {
     min-width: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #dataTable {
+  
+    thead {
+  
+      th {
+        font-size: 0.85rem;
+      }
+    }
+  
+    tbody {
+      tr {
+        td {
+          font-size: 0.75rem;
+        }
+      }
+    }
   }
 }
 
